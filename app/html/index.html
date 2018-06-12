@@ -1,65 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>首页 - 时间轴</title>
-    <meta name="renderer" content="webkit">
-    <link rel="stylesheet" href="../libs/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/index1.css">
-
-    <!--[if lt IE 9]>
-    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="../libs/jquery/jquery.min.js"></script>
-    <script src="../libs/nicescroll/jquery.nicescroll.js"></script>
-    <script src="../js/resize.js"></script>
-    <script src="../js/index1.js"></script>
-</head>
+<%- include('../templates/head') %>
 <body>
     <!--头部开始-->
-    <div class="header">
-        <div class="select">
-            <div class="sShow">
-                <span class="tit">新闻线：叙利亚动乱全纪录叙利亚动乱全纪录叙利亚动乱全纪录</span>
-                <span class="fa fa-caret-down san"></span>
-            </div>
-            <div class="sHide">
-                <ul class="sUl">
-                    <li>新闻线：叙利亚动乱全记录</li>
-                    <li>向交警推销化妆品</li>
-                    <li>唐山发生酒驾事故</li>
-                    <li>偶遇太阳闵孝琳</li>
-                    <li>偶遇太阳闵孝琳</li>
-                    <li>偶遇太阳闵孝琳</li>
-                    <li>偶遇太阳闵孝琳</li>
-                </ul>
-            </div>
-        </div>
-        <div class="describe">
-            <span class="leftImg"></span>
-            <p class="dP">011－2012年叙利亚动乱，是从2011年1月26日初步开始、后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗，为阿拉伯之春的一部分。宪法权利的缺失</p>
-            <span class="rightImg"></span>
-        </div>
-        <div class="caseConfig">
-            <a href="javascript:;"><i class="fa fa-cog config" ></i>专题配置</a>
-        </div>
-    </div>
+    <%- include('../templates/header') %>
     <!--头部结束-->
     <!--新闻专题开始-->
     <div class="newSubject">
         <div class="nLeft">
             <div class="edit"><a href="javascript:;">编辑专题</a></div>
             <div class="labelBox">
-                <div class="lTextarea"></div>
-                <div class="lEdit"></div>
+                <div class="lTextarea">
+                    <textarea disabled>微信公号”和菜头“转发了疑似推手微信公号”国际网“的文章”叙利亚问题的解决之道“，获得了10万+的阅读，对事件造成了比较大的推动作用（最好是可以列出数据做支撑）</textarea>
+                </div>
+                <div class="lEdit">
+                    <a href="javascript:;">编辑标注</a>
+                </div>
             </div>
         </div>
         <div class="nRight"></div>
     </div>
     <!--新闻专题结束-->
+    <%- include('../templates/foot') %>
+
 </body>
 </html>

@@ -1,5 +1,10 @@
 {
   "title": "首页",
-  "styles": [],
-  "scripts":[]
+
+  "styles": [
+    "../css/index1.css"
+  ],
+  "scripts":[
+    "../js/index1.js"
+  ]
 }
