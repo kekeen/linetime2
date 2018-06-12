@@ -12,7 +12,6 @@ commonJs.fn = {
         _this.dropdown();
         _this.icheck();
         _this.nicescroll();
-
     },
 
     // 下拉菜单
@@ -30,8 +29,7 @@ commonJs.fn = {
             cursorwidth:"3px",
             cursorborder:"none"
         });
-    },
-
+    }
     // 复选框
     icheck : function () {
         $('input').iCheck({
@@ -40,5 +38,5 @@ commonJs.fn = {
             increaseArea: '20%'
         });
     }
-
 };
+
