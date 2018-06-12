@@ -166,10 +166,10 @@ gulp.task('copy', function(){
       './app/libs/icheck/skins/**'
     ])
     .pipe(gulp.dest('./dist/libs/icheck/skins'));
-    //  gulp.src([
-    //   './app/libs/font-awesome-4.7.0/**'
-    // ])
-    // .pipe(gulp.dest('./dist/libs/font-awesome-4.7.0'));
+     gulp.src([
+      './app/libs/font-awesome-4.7.0/**'
+    ])
+    .pipe(gulp.dest('./dist/libs/font-awesome-4.7.0'));
 
 
 
