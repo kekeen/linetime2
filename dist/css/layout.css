@@ -87,17 +87,14 @@ a:focus {
   width: 80%;
   margin: 0 auto;
 }
-.report-details {
-  width: 100%;
-  padding-bottom: .2rem;
-  background: #013879;
-}
-.warp-top {
+/* 报道详情 start */
+.wrap-top {
+  position: relative;
   height: .35rem;
   padding-right: .1rem;
   margin-top: -0.35rem;
 }
-.warp-top .arows-up {
+.arows-up {
   display: inline-block;
   width: .22rem;
   height: .22rem;
@@ -105,8 +102,104 @@ a:focus {
   text-align: center;
   vertical-align: bottom;
   margin-left: .15rem;
+  cursor: pointer;
   background: #fff;
   color: #806b32;
 }
+.report-details {
+  width: 100%;
+  height: 9rem;
+  background: #013879;
+}
+.report-de-top {
+  height: .9rem;
+  padding: .1rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+.report-de-top p {
+  display: inline-block;
+  padding: .1rem .25rem;
+  font-size: .18rem;
+}
+.report-de-top .arows-up i {
+  color: #22528a;
+}
+.report-de-main {
+  padding: .35rem .2rem;
+}
+.report-main-title {
+  height: .9rem;
+  margin: 0 1rem;
+  text-align: center;
+  border-bottom: 1px solid #315d92;
+}
+.report-main-title h3 {
+  font-size: .38rem;
+}
+.report-main-title .title-bottom {
+  width: 30%;
+  margin: 0 auto;
+  padding: .15rem .25rem;
+}
+.report-main-title .title-bottom p {
+  margin-right: .7rem;
+}
+.report-main-title .title-bottom p span {
+  margin-right: .2rem;
+}
+.title-icon-list li {
+  float: left;
+  margin-right: .1rem;
+  text-align: center;
+}
+.title-icon-list li i {
+  display: inline-block;
+  height: .2rem;
+  width: .2rem;
+  vertical-align: bottom;
+}
+.title-icon-list li .t-n1 {
+  background: url(../images/g_n1.png) no-repeat;
+}
+.title-icon-list li .t-n2 {
+  background: url(../images/g_n2.png) no-repeat;
+}
+.title-icon-list li .t-n3 {
+  background: url(../images/g_n3.png) no-repeat;
+}
+.title-icon-list li .t-n4 {
+  background: url(../images/g_n4.png) no-repeat;
+}
+.title-icon-list li .t-n5 {
+  background: url(../images/g_n5.png) no-repeat;
+}
+.report-main-con {
+  height: 7rem;
+  padding: 0 1rem;
+}
+.report-main-con .con-txt {
+  padding: .2rem 0 .35rem;
+}
+.report-main-con .con-txt p {
+  text-indent: 30px;
+  line-height: .3rem;
+}
+.report-main-con .main-msg {
+  height: 1.6rem;
+  overflow: hidden;
+}
+.report-main-con .main-msg li {
+  float: left;
+  width: 2.6rem;
+  height: 1.6rem;
+}
+.report-main-con .main-msg li + li {
+  margin-left: .3rem;
+}
+.report-main-con .main-msg li img {
+  width: 100%;
+  height: 100%;
+}
+/* 报道详情 end */
 
 /*# sourceMappingURL=layout.css.map */
