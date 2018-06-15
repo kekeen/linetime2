@@ -1,0 +1,228 @@
+<%- include('../templates/head') %>
+<body>
+    <%- include('../templates/header') %>
+
+    <section class="contain bgw">
+        <div class="project-con">
+            <div class="project-event clearfix">
+                <div class="pull-left">
+                    <span>事件回播分析</span>
+                    <input type="" class="form-control" placeholder="事件名模糊查询">
+                    <a href="#" class="ser-btn">查询</a>
+                    <a href="#" class="a-btn" data-toggle="modal" data-target="#edit-member">添加事件</a>
+                </div>
+                <div class="pull-right">
+                    <a href="#" class="a-btn mr5">获取发布量导入模板</a>
+                    <a href="#" class="a-btn">获取时间轴区段模板</a>
+                </div>
+            </div>
+            <table class="tables pro-table">
+                <thead>
+                    <tr>
+                        <th>事件名</th>
+                        <th>事件全称</th>
+                        <th>时间范围</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="txt">
+                            <a href="javascript:;" class="tables-bt">陈意涵家境遭曝光</a>
+                        </td>
+                        <td>新闻线：叙利亚动乱记录</td>
+                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                        <td>
+                            <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
+                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt">
+                            <a href="javascript:;" class="tables-bt">上市公司2000强</a>
+                        </td>
+                        <td>新闻线：叙利亚动乱记录</td>
+                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                        <td>
+                            <a href="#" class="yellow mr25">编辑</a>
+                            <a href="#" class="yellow">删除</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt">
+                            <a href="javascript:;" class="tables-bt">膜拜员工坠楼</a>
+                        </td>
+                        <td>新闻线：叙利亚动乱记录</td>
+                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                        <td>
+                            <a href="#" class="yellow mr25">编辑</a>
+                            <a href="#" class="yellow">删除</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt">
+                            <a href="javascript:;" class="tables-bt">应聘模特被骗整形</a>
+                        </td>
+                        <td>新闻线：叙利亚动乱记录</td>
+                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                        <td>
+                            <a href="#" class="yellow mr25">编辑</a>
+                            <a href="#" class="yellow">删除</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt">
+                            <a href="javascript:;" class="tables-bt">鸿毛药酒再声明</a>
+                        </td>
+                        <td>新闻线：叙利亚动乱记录</td>
+                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                        <td>
+                            <a href="#" class="yellow mr25">编辑</a>
+                            <a href="#" class="yellow">删除</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt">
+                            <a href="javascript:;" class="tables-bt">拉共享单车回老家</a>
+                        </td>
+                        <td>新闻线：叙利亚动乱记录</td>
+                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                        <td>
+                            <a href="#" class="yellow mr25">编辑</a>
+                            <a href="#" class="yellow">删除</a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="page-box">
+                <div class="page pull-right">
+                    <span>共800条,第1/80</span>
+                    <a class="next-page btn1" href="javascript:;"><i class="fa fa-angle-left"></i></a>
+                    <ul class="page-list clearfix">
+                        <li><a class="btn1 active" href="javascript:;">1</a></li>
+                        <li><a class="btn1" href="javascript:;">2</a></li>
+                        <li><a class="btn1" href="javascript:;">3</a></li>
+                        <li><a class="btn1" href="javascript:;">4</a></li>
+                        <li><a class="btn1" href="javascript:;">5</a></li>
+                        <li><a class="btn1" href="javascript:;">6</a></li>
+                        <li><a class="btn1" href="javascript:;">7</a></li>
+                        <li><a class="btn1" href="javascript:;">8</a></li>
+                        <li><a class="btn1" href="javascript:;">9</a></li>
+                        <li><a class="btn1" href="javascript:;">10</a></li>
+                    </ul>
+                    <a class="next-page btn1" href="javascript:;"><i class="fa fa-angle-right"></i></a>
+                    <div class="dropup">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            10条/页
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">10条/页</a></li>
+                            <li><a href="#">20条/页</a></li>
+                            <li><a href="#">30条/页</a></li>
+                        </ul>
+                    </div>
+                    <span>跳转到<input type="text" class="form-control" value="1">页</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模态框 -->
+    <!-- 编辑信息 -->
+    <div class="modal fade" id="edit-member">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">新增事件</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-list">
+                        <li>
+                            <label>事件名：</label>
+                            <div class="list-right">
+                                <input type="text" class="form-control" placeholder="10个字">
+                            </div>
+                        </li>
+                        <li>
+                            <label>事件全称：</label>
+                            <div class="list-right">
+                                <input type="text" class="form-control" placeholder="30个字">
+                            </div>
+                        </li>
+                        <li>
+                            <label>时间范围：</label>
+                            <div class="list-right layut-times">
+                                <input type="text" class="form-control time-range" placeholder="2018-06-07 12:14">
+                                <span>至</span>
+                                <input type="" class="form-control time-range" placeholder="2018-06-07 12:14">
+                            </div>
+                        </li>
+                        <li>
+                            <label>事件概述：</label>
+                            <div class="list-right">
+                                <textarea rows="5" class="form-control" placeholder="限200个字"></textarea>
+                            </div>
+                        </li>
+                        <li>
+                            <label>导入发布量数据：</label>
+                            <div class="list-right layut-file">
+                                <a href="javascript:;" class="ser-btn">
+                                    浏览
+                                </a>
+                                <span>未选择文件</span>
+                                <input type="file">
+                            </div>
+                        </li>
+                        <li>
+                            <label>导入时间轴数据：</label>
+                            <div class="list-right layut-file">
+                                <a href="javascript:;" class="ser-btn">
+                                    浏览
+                                </a>
+                                <span>未选择文件</span>
+                                <input type="file" name="">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
+                    <button id="btn" type="button" class="btn yes">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 删除 -->
+    <div class="modal fade" id="del">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">删除</h4>
+                </div>
+                <div class="modal-body">
+                    账号删除后不能恢复，是否删除所选账号？
+                </div>
+                <div class="modal-footer">
+                    <button id="btn" type="button" class="btn yes">确定</button>
+                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../templates/foot') %>
+
+
+
+</body>
+</html>

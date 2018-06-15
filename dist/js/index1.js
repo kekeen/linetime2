@@ -10,6 +10,7 @@ commonJs.fn = {
     init : function(){
         var _this = this;
         _this.dropdown();
+        _this.dropdup();
         _this.niceScroll();
     },
 
@@ -31,6 +32,14 @@ commonJs.fn = {
             }
         })
     },
+    // bootstrap下拉框
+    dropdup : function () {
+        $('.dropdown,.dropup').on('click','.dropdown-menu li a', function(event) {
+            var txt = $(this).text();
+            $(this).parents('.dropdown-menu').siblings('.dropdown-toggle')[0].childNodes[0].nodeValue = txt + ' ';
+        });
+    },
+
     //美化滚动条
     niceScroll : function () {
         $('.sUl').niceScroll({
@@ -45,3 +54,12 @@ commonJs.fn = {
     }
 
 };
+
+    // 时间控件
+    lay('.time-range').each(function(){
+        laydate.render({
+            elem: this,
+            type: 'datetime'
+        });
+    });
+

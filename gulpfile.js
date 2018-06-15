@@ -171,7 +171,10 @@ gulp.task('copy', function(){
     ])
     .pipe(gulp.dest('./dist/libs/font-awesome-4.7.0'));
 
-
+     gulp.src([
+      './app/libs/laydate/**'
+    ])
+    .pipe(gulp.dest('./dist/libs/laydate'));
 
 });
 // ----------------静态页面开发流程----------------end
