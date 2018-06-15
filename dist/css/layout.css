@@ -87,17 +87,14 @@ a:focus {
   width: 80%;
   margin: 0 auto;
 }
-.report-details {
-  width: 100%;
-  padding-bottom: .2rem;
-  background: #013879;
-}
-.warp-top {
+/* 报道详情 start */
+.wrap-top {
+  position: relative;
   height: .35rem;
   padding-right: .1rem;
   margin-top: -0.35rem;
 }
-.warp-top .arows-up {
+.arows-up {
   display: inline-block;
   width: .22rem;
   height: .22rem;
@@ -105,8 +102,206 @@ a:focus {
   text-align: center;
   vertical-align: bottom;
   margin-left: .15rem;
+  cursor: pointer;
   background: #fff;
   color: #806b32;
 }
+.report-details {
+  width: 100%;
+  height: 9rem;
+  background: #013879;
+}
+.report-de-top {
+  height: .9rem;
+  padding: .1rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+.report-de-top p {
+  display: inline-block;
+  padding: .1rem .25rem;
+  font-size: .18rem;
+}
+.report-de-top .arows-up i {
+  color: #22528a;
+}
+.report-de-main {
+  padding: .35rem .2rem;
+}
+.report-main-title {
+  height: .9rem;
+  margin: 0 1rem;
+  text-align: center;
+  border-bottom: 1px solid #315d92;
+}
+.report-main-title h3 {
+  font-size: .38rem;
+}
+.report-main-title .title-bottom {
+  width: 30%;
+  margin: 0 auto;
+  padding: .15rem .25rem;
+}
+.report-main-title .title-bottom p {
+  margin-right: .7rem;
+}
+.report-main-title .title-bottom p span {
+  margin-right: .2rem;
+}
+.title-icon-list li {
+  float: left;
+  margin-right: .1rem;
+  text-align: center;
+}
+.title-icon-list li i {
+  display: inline-block;
+  height: .2rem;
+  width: .2rem;
+  vertical-align: bottom;
+}
+.title-icon-list li .t-n1 {
+  background: url(../images/g_n1.png) no-repeat;
+}
+.title-icon-list li .t-n2 {
+  background: url(../images/g_n2.png) no-repeat;
+}
+.title-icon-list li .t-n3 {
+  background: url(../images/g_n3.png) no-repeat;
+}
+.title-icon-list li .t-n4 {
+  background: url(../images/g_n4.png) no-repeat;
+}
+.title-icon-list li .t-n5 {
+  background: url(../images/g_n5.png) no-repeat;
+}
+.report-main-con {
+  height: 7rem;
+  padding: 0 1rem;
+}
+.report-main-con .con-txt {
+  padding: .2rem 0 .35rem;
+}
+.report-main-con .con-txt p {
+  text-indent: 30px;
+  line-height: .3rem;
+}
+.report-main-con .main-msg {
+  height: 1.6rem;
+  overflow: hidden;
+}
+.report-main-con .main-msg li {
+  float: left;
+  width: 2.6rem;
+  height: 1.6rem;
+}
+.report-main-con .main-msg li + li {
+  margin-left: .3rem;
+}
+.report-main-con .main-msg li img {
+  width: 100%;
+  height: 100%;
+}
+/* 报道详情 end */
+/* 专题配置 start */
+.bgw {
+  background: #013879;
+}
+.project-con {
+  padding: 0 .35rem;
+}
+.project-event {
+  margin: .1rem 0 .3rem;
+}
+.project-event span {
+  font-size: .18rem;
+  margin-right: .25rem;
+}
+.project-event input {
+  width: 5.15rem;
+}
+.pro-table {
+  padding: 0 .4rem;
+  background: rgba(255, 255, 255, 0.15);
+}
+/* 翻页 start */
+.page-box {
+  margin-top: .25rem;
+}
+.page-box span {
+  display: inline-block;
+}
+.page-box .btn1 {
+  display: inline-block;
+  line-height: .22rem;
+  min-width: .22rem;
+  text-align: center;
+  padding: 0 8px;
+  background: rgba(255, 255, 255, 0.22);
+  margin: 0 2px;
+}
+.page-box .btn1:hover,
+.page-box .btn1.active {
+  background: #0a5ab3;
+  color: #fff;
+}
+.page-box .page-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-box .page-list li {
+  float: left;
+}
+.page-box .dropup {
+  margin-left: .1rem;
+  margin-right: .05rem;
+}
+.page-box input {
+  display: inline-block;
+  width: .5rem;
+  margin: 0 .1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.22);
+  border: none;
+}
+/* 翻页 end */
+/** 弹出框 start */
+.modal-list > li {
+  margin-bottom: .2rem;
+}
+.modal-list > li label {
+  float: left;
+  width: 1.6rem;
+  text-align: right;
+  font-size: .2rem;
+  font-weight: normal;
+}
+.modal-list > li .list-right {
+  margin-left: 1.6rem;
+  font-size: .16rem;
+}
+.modal-list > li .list-right input {
+  width: 70%;
+}
+.layut-times input {
+  display: inline-block;
+  width: 33.5% !important;
+  padding: 0 .35rem;
+}
+.layut-file {
+  position: relative;
+}
+.layut-file a {
+  background: #0f6cde;
+}
+.layut-file input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 0;
+}
+/** 弹出框 end */
+/* 专题配置 end */
 
 /*# sourceMappingURL=layout.css.map */

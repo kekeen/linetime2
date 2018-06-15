@@ -1,5 +1,5 @@
 {
-    "site": "ejs-demo",
+    "site": "事件胶卷",
     "styles": [
         "../css/custom-bootstrap.css",
         "../libs/font-awesome-4.7.0/css/font-awesome.min.css",
@@ -10,7 +10,14 @@
     "scripts": [
         "../libs/jquery/jquery.min.js",
         "../libs/icheck/icheck.min.js",
+        "../libs/bootstrap/dist/bootstrap.min.js",
         "../libs/nicescroll/jquery.nicescroll.js",
+<<<<<<< HEAD
         "../js/resize.js"
+=======
+        "../libs/laydate/laydate.js",
+        "../js/resize.js",
+        "../js/index1.js"
+>>>>>>> ee1af18118494ff9411f8b91ba8ed50b67b71571
     ]
 }
