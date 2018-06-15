@@ -2,24 +2,140 @@
 @import "./base/base.less";
 @import "./base/conn.less";
 
-
+/*头部*/
+.header{
+  width: 100%;
+  height: 1.2rem;
+  background: url("../images/header.png") no-repeat;
+  background-size: 100% 100%;
+  .select{
+    float: left;
+    position: relative;
+    width: 5.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 0.4rem;
+    cursor: pointer;
+      .tit{
+        display: inline-block;
+        vertical-align: middle;
+        width: 4.9rem;
+        font-size: 0.36rem;
+        font-weight: bold;
+        .txt();
+      }
+      .san{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.38rem;
+        color: white;
+      }
+    .sHide{
+      position: absolute;
+      z-index: 9999 !important;
+      left: 0;
+      top: 0.92rem;
+      width: 5.78rem;
+      height: 2.8rem;
+      padding:0.1rem 0.08rem 0.2rem 0.25rem;
+      background: #013777;
+      display: none;
+        .sUl{
+          height: 2.5rem;
+        }
+        li{
+          width: 5.2rem;
+          min-height: 0.42rem;
+          line-height: normal;
+          padding: .1rem 0;
+          border-bottom: 1px solid #27548a;
+          font-size: 0.18rem;
+          padding-left: 10px;
+          &:last-child{
+            border-bottom: none;
+          }
+          &:hover{
+            background: #15498d;
+            color: #ffda24;
+          }
+        }
+    }
+  }
+  .describe{
+    float: left;
+    position: relative;
+    margin-left: .7rem;
+    width: 8.4rem;
+    width: 43%;
+    height: 0.7rem;
+    .leftImg,.rightImg{
+      width: .1rem;
+      height:.44rem;
+      background: url("../images/header-su.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .leftImg{
+      position: absolute;
+      left: 0;
+      top: .12rem;
+    }
+    .rightImg{
+      position: absolute;
+      right: 0;
+      top: .12rem;
+    }
+    .dP{
+      padding: .12rem .2rem 0 .2rem;
+      line-height: .26rem;
+      font-size: .16rem;
+      color: #ffffff;
+      .txtmore(2);
+    }
+  }
+  .caseConfig{
+    float: right;
+    margin-top: .22rem;
+    margin-right:.2rem;
+  }
+    a{
+      display: block;
+      width: 1rem;
+      height: .3rem;
+      line-height: .3rem;
+      border-radius: 3px;
+      background: #0c5fba;
+      font-size: 0.14rem;
+      color: #ffffff;
+        .config{
+          vertical-align: middle;
+          margin: 0 .1rem 0 .1rem;
+          font-size: .2rem;
+        }
+    }
+}
 /*新闻专题*/
 .newSubject{
   width: 100%;
-  padding-top: 1.2rem;
-  height: 500px;
+  //margin-top: 1.2rem;
+  margin-top: 1.1rem;
   .nLeft{
+    position: relative;
     float: left;
     margin-left: 0.5%;
     width:72%;
+    //overflow: hidden;
     .edit{
+      position: absolute;
+      z-index: 1000;
+      right: 0;
+      top: -0.3rem;
       float: right;
-      margin-top: -0.3rem;
     }
     .edit a{
       display: block;
-      width: 0.84rem;
-      height: 0.3rem;
+      //width: 0.84rem;
+      //height: 0.3rem;
+      padding: .02rem .08rem;
       line-height: 0.3rem;
       border-radius: 3px;
       background: white;
@@ -29,6 +145,7 @@
     }
     .labelBox{
       margin-top: .1rem;
+      padding: .1rem;
       width: 100%;
       height: 1rem;
       background: rgba(255,255,255,0.2);
@@ -36,18 +153,352 @@
       .lTextarea{
         display: inline-block;
         vertical-align: middle;
+        /*width: 90%;*/
+        width: 100%;
+        textarea{
+          width: 100%;
+          height: 0.8rem;
+          line-height: 0.34rem;
+          padding: .1rem .15rem 0 .15rem;
+          /*background: rgba(255,255,255,0.2);*/
+          background: none;
+          border: none;
+          border-radius: 2px;
+          font-size: .18rem;
+          color: #ffffff;
+        }
       }
       .lEdit{
+        margin-left: .2rem;
         display: inline-block;
         vertical-align: middle;
+        display: none;/*隐藏编辑框的*/
+        a{
+          font-size: .22em;
+          color: #fff200;
+          .bian{
+            margin-right: .12rem;
+            vertical-align: middle;
+            display: inline-block;
+            width: .3rem;
+            height: .3rem;
+            background: url("../images/index-sEdit.png") no-repeat;
+            background: url("../images/index-sEdit.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          span{
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: .05rem;
+          }
+        }
+      }
+    }
+    /*案例排版*/
+    .caseBox{
+      width: 100%;
+      margin-top: .15rem;
+      height: 6.3rem;
+      overflow: hidden;
+      .listDiv{
+        float: left;
+        //width: 25%; //单个div的宽度
+        width: 3.8rem;
+        .place{
+          width: 100%;
+          height: 2rem;
+          margin-top: .12rem;
+        }
+        /*单个案例--标题+摘要*/
+        .detailsDiv{
+          position: relative;
+          width: 92%;//里面小div的宽度
+          margin-top: .12rem;
+          height: 2rem;
+          border-radius: 2px;
+          background: rgba(255,255,255,0.2);
+          padding: .1rem;
+          cursor: pointer;
+          .div1In{
+            width: 100%;
+            height: 100%;
+            background: rgba(23,89,147,0.3);
+            .come{
+              height: .28rem;
+              font-size: 0.16rem;
+              padding: .06rem .15rem 0 .15rem;
+              .comeL{
+                text-align: left;
+                float: left;
+                width: 80%;
+                i{
+                  display: inline-block;
+                  margin-left: .08rem;
+                  &.lanV{
+                    width: .14rem;
+                    height: .14rem;
+                    background: url("../images/g_n1.png") no-repeat;
+                    background-size: 100% 100%;
+                  }
+                  &.dangshi{
+                    width: .18rem;
+                    height: .14rem;
+                    background: url("../images/g_n2.png") no-repeat;
+                    background-size: 100% 100%;
+                  }
+                  &.shoufa{
+                    width: .14rem;
+                    height: .16rem;
+                    background: url("../images/g_n3.png") no-repeat;
+                    background-size: 100% 100%;
+                  }
+                  &.ganshi{
+                    width: .16rem;
+                    height: .16rem;
+                    background: url("../images/g_n4.png") no-repeat;
+                    background-size: 100% 100%;
+                  }
+                  &.baodian{
+                    width: .16rem;
+                    height: .16rem;
+                    background: url("../images/g_n5.png") no-repeat;
+                    background-size: 100% 100%;
+                  }
+                }
+              }
+              .comeR{
+                width: 20%;
+                float: right;
+                text-align: right;
+                i.ie{
+                  color: #63c5fd;
+                }
+              }
+            }
+            .wenzhang{
+              padding: 0 0.25rem;
+              .wenzhangIn{
+                width: 100%;
+              }
+              .wP{
+                width: 100%;
+                padding: .06rem 0 .08rem 0;
+                text-align: center;
+                font-size: 0.18rem;
+                color: #ffffff;
+                border-bottom: 1px solid white;
+                .txt();
+              }
+              .wP2{
+                width: 100%;
+                margin-top: 0.1rem;
+                line-height: .23rem;
+                font-size: 0.14rem;
+                color: #ffffff;
+                .txtmore(4);
+              }
+            }
+          }
+          .hoverDiv{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            .img{
+              width: .64rem;
+              height: .64rem;
+              margin: 0 auto;
+              margin-top: .65rem;
+              background: url("../images/index-fangda.png") no-repeat;
+              background-size: 100%;
+            }
+          }
+          .editDiv{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            .aBox{
+              margin-top: .6rem;
+              padding-left: .6rem;
+              p{
+                margin-top: .15rem;
+                font-size: .14rem;
+                color: #ffffff;
+              }
+            }
+            .aEdit{
+              margin-right: .6rem;
+              display: inline-block;
+              vertical-align: middle;
+              img{
+                display: block;
+                width: .4rem;
+                height: .4rem;
+                margin:0 auto;
+              }
+            }
+            .aDel{
+              display: inline-block;
+              vertical-align: middle;
+              img{
+                display: block;
+                width: .46rem;
+                height: .46rem;
+                margin:0 auto;
+              }
+            }
+          }
+        }
+        /*单个案例--图片描述*/
+        .imgDiv .wenzhang{
+          padding: 0 0.05rem !important;
+        }
+        .imgDiv .wenzhang .wP{
+          border-bottom: none !important;
+          padding: .06rem 0 .02rem 0 !important;
+        }
+        .imgDiv .wenzhang .wP2{
+          margin-top: 0.03rem !important;
+          width: 2.95rem;
+          height: 1.08rem;
+          img{
+            width: 100%;
+          }
+        }
       }
     }
   }
+  /*右边重点报道开始*/
   .nRight{
+    position: relative;
     float: right;
     margin-right: 1%;
     width: 23%;
-    height: 300px;
-    background: blue;
+    .top{
+      position: absolute;
+      z-index: 1000;
+      left: 0;
+      top: -.21rem;
+      text-outline:0;
+      height: .32rem;
+      width: 100%;
+      .tit{
+        float: left;
+        width: 1.3rem;
+        height: 0.21rem;
+        text-indent: 6px;
+        background: url("../images/index-zhongdian.png") no-repeat;
+        background-size: 100% 100%;
+        font-size: .14rem;
+        color: #010101;
+      }
+      .control{
+        float: right;
+        a{
+          display: block;
+          width: .21rem;
+          height: .21rem;
+          background: url("../images/index-down.png") no-repeat;
+          background-size: 100% 100%;
+          &.up{/*向上拉*/
+            display: block;
+            width: .21rem;
+            height: .21rem;
+            background: url("../images/index-up.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+    .keyNote{
+      width: 100%;
+      height: 7.4rem;
+      margin-top: .13rem;
+      background: rgba(0,29,68,0.5);
+      .descriptBox{
+        padding: 0 .25rem;
+        .boxIn{
+          width: 100%;
+        }
+        .bTit{
+          margin-top: .35rem;
+          text-align: center;
+          font-size: .2rem;
+          color: white;
+        }
+        .bLabel{
+          margin-top: .18rem;
+          border-bottom: 1px solid #ffffff;
+          .wenzi{
+            float: left;
+            font-size: .12rem;
+            color: #ffffff;
+            .span1{
+              margin-right: .2rem;
+            }
+          }
+          .tubiao{
+            float: right;
+            padding-bottom: .12rem;
+            i{
+              display: inline-block;
+              margin-right: .1rem;
+            }
+            .lanV{
+              display: inline-block;
+              width: .14rem;
+              height: .14rem;
+              background: url("../images/g_n1.png") no-repeat;
+              background-size: 100% 100%;
+            }
+            .dangshi{
+              display: inline-block;
+              width: .18rem;
+              height: .14rem;
+              background: url("../images/g_n2.png") no-repeat;
+              background-size: 100% 100%;
+            }
+            .shoufa{
+              display: inline-block;
+              width: .14rem;
+              height: .16rem;
+              background: url("../images/g_n3.png") no-repeat;
+              background-size: 100% 100%;
+            }
+            .ganshi{
+              display: inline-block;
+              width: .16rem;
+              height: .16rem;
+              background: url("../images/g_n4.png") no-repeat;
+              background-size: 100% 100%;
+            }
+            .baodian{
+              display: inline-block;
+              width: .16rem;
+              height: .16rem;
+              background: url("../images/g_n5.png") no-repeat;
+              background-size: 100% 100%;
+            }
+          }
+        }
+        .bCont{
+          font-size: .16rem;
+          color: #ffffff;
+          p{
+            margin-top: .22rem;
+            line-height: .24rem;
+            text-indent: 20px;
+          }
+        }
+      }
+    }
   }
 }
+

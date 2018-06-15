@@ -171,6 +171,13 @@ gulp.task('copy', function(){
     ])
     .pipe(gulp.dest('./dist/libs/font-awesome-4.7.0'));
 
+    gulp.src([
+      './app/libs/swiper/dist/js/swiper.min.js',
+      './app/libs/swiper/dist/css/swiper.min.css'
+    ])
+    .pipe(gulp.dest('./dist/libs/swiper'));
+
+
 
 
 });

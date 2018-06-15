@@ -11,7 +11,6 @@
         "../libs/jquery/jquery.min.js",
         "../libs/icheck/icheck.min.js",
         "../libs/nicescroll/jquery.nicescroll.js",
-        "../js/resize.js",
-        "../js/index1.js"
+        "../js/resize.js"
     ]
 }

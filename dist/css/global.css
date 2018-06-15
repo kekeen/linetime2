@@ -90,6 +90,7 @@ a:focus {
 /* 头部 start */
 .header {
   position: fixed;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
@@ -208,6 +209,82 @@ a:focus {
   font-size: .2rem;
 }
 /* 头部 end */
+/*尾部开始*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.15rem;
+  padding-left: 0.5%;
+  background: url("../images/footer-bg.png") top center no-repeat;
+  background-size: 100% 100%;
+}
+.footer .swiper-wrapper {
+  width: 200%;
+  background: url("../images/index-time.png") left 150px repeat-x;
+}
+.footer .swiper-slide {
+  height: 2.15rem;
+  padding-top: .31rem;
+  cursor: pointer;
+}
+.footer .swiper-slide .swiperIn {
+  position: relative;
+  height: 100%;
+  border-left: 1px solid white;
+}
+.footer .swiper-slide .swiperIn .setTime {
+  position: absolute;
+  left: 0;
+  bottom: .08rem;
+  font-size: .12rem;
+  color: #ffffff;
+}
+.footer .swiper-slide .swiperIn .setTime .time1 {
+  display: inline-block;
+  margin-right: .2rem;
+  width: .58rem;
+  height: .25rem;
+  line-height: .25rem;
+  text-align: center;
+  vertical-align: middle;
+  background: url("../images/index-times.png") no-repeat;
+  background-size: 100% 100%;
+}
+.footer .swiper-slide .swiperIn ul {
+  padding-top: .05rem;
+}
+.footer .swiper-slide .swiperIn li {
+  margin-top: .1rem;
+  min-height: .34rem;
+  width: 2.5rem;
+}
+.footer .swiper-slide .swiperIn li.active {
+  border: 1px solid #fff200;
+}
+.footer .swiper-slide .swiperIn li.active .xing {
+  color: #fff200;
+}
+.footer .swiper-slide .swiperIn .haveCon {
+  margin-top: .1rem;
+  min-height: .34rem;
+  width: 2.5rem;
+  line-height: .34rem;
+  padding-left: .1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  font-size: .14rem;
+  color: #ffffff;
+}
+.footer .swiper-slide .swiperIn .haveCon .xing {
+  vertical-align: middle;
+  margin-right: .06rem;
+}
+.footer .swiper-slide .swiperIn .holpPlace {
+  background: none;
+}
+/*尾部开始*/
 .contain {
   height: 100%;
   padding-top: 1.2rem;

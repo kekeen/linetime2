@@ -11,6 +11,8 @@ commonJs.fn = {
         var _this = this;
         _this.dropdown();
         _this.niceScroll();
+        _this.editSubject();
+        _this.editLabel();
     },
 
     // 下拉案例
@@ -42,6 +44,30 @@ commonJs.fn = {
             cursorborderradius: "3px",//以像素为光标边界半径
             autohidemode: false //是否隐藏滚动条
         });
+    },
+    //编辑专题
+    editSubject : function () {
+        $('.nLeft .edit a').click(function () {
+            //标注发生变化
+            $('.labelBox .lTextarea').css({'width':'90%'});
+            $('.labelBox .lEdit').css('display','inline-block')
+        })
+    },
+    //编辑标注
+    editLabel : function () {
+        $('.labelBox .lEdit').click(function () {
+            if($(this).find('span').text() == '编辑标注'){
+                $('.lTextarea textarea').attr('disabled',false).css('background','rgba(255,255,255,0.2)');
+                $('.lEdit span').text('保存标注');
+            }else if($(this).find('span').text() == '保存标注'){
+                $('.lTextarea textarea').attr('disabled',true).css('background','none');
+                $('.lEdit span').text('编辑标注');
+            }
+        })
     }
+    //点击底部导航选中对应新闻
+    // clickHaveCon : function () {
+    //     $('')
+    // }
 
 };
