@@ -89,6 +89,7 @@ a:focus {
 }
 /* 报道详情 start */
 .wrap-top {
+  z-index: 1000;
   position: relative;
   height: .35rem;
   padding-right: .1rem;

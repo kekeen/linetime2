@@ -12,12 +12,9 @@
         "../libs/icheck/icheck.min.js",
         "../libs/bootstrap/dist/bootstrap.min.js",
         "../libs/nicescroll/jquery.nicescroll.js",
-<<<<<<< HEAD
-        "../js/resize.js"
-=======
         "../libs/laydate/laydate.js",
         "../js/resize.js",
         "../js/index1.js"
->>>>>>> ee1af18118494ff9411f8b91ba8ed50b67b71571
+
     ]
 }

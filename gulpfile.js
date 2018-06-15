@@ -171,7 +171,7 @@ gulp.task('copy', function(){
     ])
     .pipe(gulp.dest('./dist/libs/font-awesome-4.7.0'));
 
-<<<<<<< HEAD
+
     gulp.src([
       './app/libs/swiper/dist/js/swiper.min.js',
       './app/libs/swiper/dist/css/swiper.min.css'
@@ -180,12 +180,12 @@ gulp.task('copy', function(){
 
 
 
-=======
+
      gulp.src([
       './app/libs/laydate/**'
     ])
     .pipe(gulp.dest('./dist/libs/laydate'));
->>>>>>> ee1af18118494ff9411f8b91ba8ed50b67b71571
+
 
 });
 // ----------------静态页面开发流程----------------end
