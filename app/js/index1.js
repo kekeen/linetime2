@@ -12,6 +12,7 @@ commonJs.fn = {
         _this.dropdown();
         _this.dropdup();
         _this.niceScroll();
+        _this.icheck();
         _this.editSubject();
         _this.editLabel();
     },
@@ -54,6 +55,14 @@ commonJs.fn = {
             autohidemode: false //是否隐藏滚动条
         });
     },
+    // 复选框
+    icheck : function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_flat-blue',
+            radioClass: 'iradio_flat-blue',
+            increaseArea: '20%' // optional
+        });
+    },
     //编辑专题
     editSubject : function () {
         $('.nLeft .edit a').click(function () {
@@ -88,4 +97,5 @@ commonJs.fn = {
             type: 'datetime'
         });
     });
+
 

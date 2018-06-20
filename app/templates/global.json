@@ -3,16 +3,18 @@
     "styles": [
         "../css/custom-bootstrap.css",
         "../libs/font-awesome-4.7.0/css/font-awesome.min.css",
-        "../libs/icheck/skins/flat/_all.css",
+        "../libs/icheck/flat/_all.css",
+        "../libs/swiper/swiper.min.css",
         "../css/layout.css",
         "../css/global.css"
     ],
     "scripts": [
         "../libs/jquery/jquery.min.js",
-        "../libs/icheck/icheck.min.js",
         "../libs/bootstrap/dist/bootstrap.min.js",
         "../libs/nicescroll/jquery.nicescroll.js",
+        "../libs/icheck/icheck.min.js",
         "../libs/laydate/laydate.js",
+       "../libs/swiper/swiper.min.js",
         "../js/resize.js",
         "../js/index1.js"
 

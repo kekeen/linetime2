@@ -605,6 +605,439 @@
     <!--尾部开始-->
     <%- include('../templates/footer') %>
     <!--尾部结束-->
+
+
+    <!-- 模态框 -->
+    <!-- 编辑报道 -->
+    <div class="modal fade" id="editReport">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">编辑报道</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-list">
+                        <li>
+                            <label>标签：</label>
+                            <div class="list-right">
+                                <div class="list-report-label">
+                                    <ul class="list-right-btn clearfix">
+                                        <li>
+                                            <a href="javascript:;" class="active">
+                                                <i></i>
+                                                首发
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-2"></i>
+                                                爆点
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-3"></i>
+                                                当事人
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-4"></i>
+                                                当事方
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-5"></i>
+                                                干系人
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="active">
+                                                <i class="lr-6"></i>
+                                                蓝V
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-7"></i>
+                                                橙V
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="active">
+                                                <i class="lr-8"></i>
+                                                达人
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-9"></i>
+                                                疑似推手
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-10"></i>
+                                                重要媒体
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-11"></i>
+                                                自定义媒体
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-12"></i>
+                                                辟谣
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-13"></i>
+                                                重点报道
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-14"></i>
+                                                央煤
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-16"></i>
+                                                通稿
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-17"></i>
+                                                地方政府媒体
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-18"></i>
+                                                意见领袖
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-19"></i>
+                                                热点博主
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-20"></i>
+                                                权威机构
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="">
+                                                <i class="lr-21"></i>
+                                                行业大佬
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="edit-more-btn">
+                                        <a href="javascript:;" class="more-btn">
+                                            更多
+                                        </a>
+                                        <a href="javascript:;" class="add-btn"><i></i></a>
+                                    </div>
+                                </div>
+                                <div class="list-label">
+                                    <ul class="list-right-btn clearfix ">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-1"></i>
+                                                热搜
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-2"></i>
+                                                事件发生
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="active">
+                                                <i class="ld-3"></i>
+                                                事件平息
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-4"></i>
+                                                热点转移话题
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-5"></i>
+                                                事件延伸话题
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-6"></i>
+                                                删帖
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-7"></i>
+                                                报道
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <i class="ld-8"></i>
+                                                评论
+                                            </a>
+                                        </li>
+                                        </li>
+                                        <li class="site">
+                                            <a href="javascript:;">
+                                                <i></i>
+                                                新增项可删
+                                                <span>x</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="edit-more-btn">
+                                        <a href="javascript:;" class="more-btn">
+                                        更多
+                                        </a>
+                                        <a href="javascript:;" class="add-btn"><i></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label>站点来源：</label>
+                            <div class="list-right">
+                                <ul class="list-right-btn clearfix" id="web-btn">
+                                    <li>
+                                        <a href="javascript:;" class="active">
+                                            <i class="web-1"></i>
+                                            网站
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="web-3"></i>
+                                            论坛
+                                        </a>
+                                    </li>
+                                    <li class="close-re-title">
+                                        <a href="javascript:;">
+                                            <i class="web-4"></i>
+                                            微博
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="web-5"></i>
+                                            微信
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="web-6"></i>
+                                            APP
+                                        </a>
+                                    </li>
+                                    <li class="close-re-title">
+                                        <a href="javascript:;">
+                                            <i class="web-7"></i>
+                                            facebook
+                                        </a>
+                                    </li>
+                                    <li class="close-re-title">
+                                        <a href="javascript:;">
+                                            <i class="web-8"></i>
+                                            twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="web-9"></i>
+                                            境外网站
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="web-10"></i>
+                                            电子报刊
+                                        </a>
+                                    </li>
+                                    <li class="site">
+                                        <a href="javascript:;">
+                                            <i></i>
+                                            新增项
+                                            <span>x</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="edit-more-btn">
+                                    <a href="javascript:;" class="more-btn">
+                                    更多
+                                    </a>
+                                    <a href="javascript:;" class="add-btn"><i></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="report-box">
+                            <ul>
+                                <li>
+                                    <label>显示：</label>
+                                    <div class="list-right">
+                                        <ul class="list-checked clearfix">
+                                            <li>
+                                                <label><input type="checkbox">标题+图片</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox">标题+摘要</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox">摘要+图片</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>报道方：</label>
+                                    <div class="list-right layut-times">
+                                        <input type="text" class="form-control" placeholder="不超过12个字">
+                                        <span class="span-txt">不超过12个字</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>报道时间点：</label>
+                                    <div class="list-right layut-times">
+                                        <input type="text" class="form-control time-range time-bg" placeholder="请选择时间发布点">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>报道内容：</label>
+                                    <div class="list-right">
+                                        <ul class="report-con">
+                                            <li class="re-title">
+                                                <span class="con-span">
+                                                    <em>*</em>
+                                                     新闻标题：
+                                                </span>
+                                                <div class="list-right">
+                                                    <input type="text" name="" class="form-control" placeholder="叙利亚危机游行">
+                                                    <span class="span-txt"> 不超过30个字</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="con-span">
+                                                    <em>*</em>
+                                                    摘要：
+                                                </span>
+                                                <div class="list-right">
+                                                    <input type="text" name="" class="form-control" placeholder="学生游行导致叙利亚爆发危机">
+                                                    <span class="span-txt"> 不超过30个字</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="con-span">
+                                                    <em>*</em>
+                                                    正文：
+                                                </span>
+                                                <div class="list-right">
+                                                    <textarea class="form-control" rows="6"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="des-con">
+                            <ul>
+                                <li>
+                                    <label>显示：</label>
+                                    <div class="list-right">
+                                        <ul class="list-checked clearfix">
+                                            <li>
+                                                <label><input type="checkbox">描述+图片</label>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox">描述</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>描述：</label>
+                                    <div class="list-right">
+                                        <textarea class="form-control" rows="6"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label>添加图片：</label>
+                            <div class="list-right">
+                                <ul class="layut-file clearfix">
+                                    <li>
+                                        <a href="javascript:;" class="ser-btn">
+                                        添加图片
+                                        </a>
+                                        <input type="file">
+                                    </li>
+                                    <li>
+                                        <ul class="upload-list">
+                                            <li>
+                                                <span>123.JPG</span>
+                                                <div class="pro-box">
+                                                    <span class="pro-percent">
+                                                        <i style="width:20%;"></i>
+                                                    </span>
+                                                    <span>20%</span>
+                                                    <span class="uploading">上传中</span>
+                                                </div>
+                                                <img src="../images/close.png" alt="" class="pull-right">
+                                            </li>
+                                            <li>
+                                                <span class="upload-name">123.JPG</span>
+                                                <div class="pro-box">
+                                                    <span class="uploading">上传成功</span>
+                                                </div>
+                                                <img src="../images/close.png" alt="" class="pull-right">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label>标注：</label>
+                            <div class="list-right">
+                                <textarea rows="5" class="form-control" placeholder="限200个字"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
+                    <button id="btn" type="button" class="btn yes">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <%- include('../templates/foot') %>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -617,6 +1050,44 @@
                 clickable: true,
             },
         });
+    $(function(){
+        // 点击按钮获取更多
+        $('.edit-more-btn').on('click','.more-btn',function(){
+            var text = $.trim($(this).text());
+            if(text === '更多'){
+                $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('auto');
+                $(this).html('收起');
+            }
+            else{
+                $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('.35rem');
+                $(this).html('更多');
+            }
+        });
+        // 点击关闭
+        $('.site').on('click','a span',function(){
+            $(this).parents('.site').remove();
+        });
+        // 报道类标签和描述类标签内容切换
+        $('.list-label').on('click','li',function(){
+            $(this).parents('li').siblings('.des-con').show();
+            $(this).parents('li').siblings('.report-box').hide();
+        });
+        $('.list-report-label').on('click','li',function(){
+            $(this).parents('li').siblings('.report-box').show();
+            $(this).parents('li').siblings('.des-con').hide();
+
+        });
+        // 点击指定按钮不显示标题
+        $('#web-btn').on('click','li',function(){
+            if($(this).hasClass('close-re-title')){
+                $(this).parents('li').siblings('.report-box').find('.re-title').hide();
+            }else{
+                $(this).parents('li').siblings('.report-box').find('.re-title').show();
+            }
+
+        });
+
+    })
     </script>
 </body>
 </html>
