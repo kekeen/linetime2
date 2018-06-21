@@ -2,10 +2,12 @@
   "title": "首页",
 
   "styles": [
-    "../css/index1.css",
-    "../libs/swiper/swiper.min.css"
+    "../css/index1.css"
   ],
   "scripts":[
+
     "../libs/swiper/swiper.min.js"
+
+
   ]
 }

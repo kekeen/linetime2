@@ -12,6 +12,7 @@ commonJs.fn = {
         _this.dropdown();
         _this.dropdup();
         _this.niceScroll();
+        _this.icheck();
         _this.editSubject();
         _this.editLabel();
         _this.togglePoint();
@@ -65,6 +66,14 @@ commonJs.fn = {
             cursorborder: "0", // 游标边框css定义
             cursorborderradius: "3px",//以像素为光标边界半径
             autohidemode: false //是否隐藏滚动条
+        });
+    },
+    // 复选框
+    icheck : function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_flat-blue',
+            radioClass: 'iradio_flat-blue',
+            increaseArea: '20%' // optional
         });
     },
     //编辑专题
@@ -299,4 +308,5 @@ commonJs.fn = {
             type: 'datetime'
         });
     });
+
 

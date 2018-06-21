@@ -76,6 +76,14 @@ commonJs.fn = {
             increaseArea: '20%' // optional
         });
     },
+    // 复选框
+    icheck : function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_flat-blue',
+            radioClass: 'iradio_flat-blue',
+            increaseArea: '20%' // optional
+        });
+    },
     //编辑专题
     editSubject : function () {
         $('.nLeft .edit a').click(function () {
