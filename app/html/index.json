@@ -6,7 +6,6 @@
     "../libs/swiper/swiper.min.css"
   ],
   "scripts":[
-    "../js/index1.js",
     "../libs/swiper/swiper.min.js"
   ]
 }

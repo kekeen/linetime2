@@ -105,7 +105,8 @@
             line-height: .26rem;
             font-size: .16rem;
             color: #ffffff;
-            .txtmore(2);
+            height: .6rem;
+            overflow: hidden;
         }
     }
     .caseConfig{
@@ -141,18 +142,31 @@
     padding-left: 0.5%;
     background: url("../images/footer-bg.png") top center no-repeat;
     background-size: 100% 100%;
+    /*标杆*/
+    .gan{
+        position: absolute;
+        left: 693px;
+        top: .28rem;
+        width: .15rem;
+        height: 1.54rem;
+        background: url("../images/gan.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    .swiper-container{
+        width: 100%;
+    }
     .swiper-wrapper{
-        width: 200%;
+        width: 100%;
         background: url("../images/index-time.png") left 150px repeat-x;
     }
     .swiper-slide{
         height: 2.15rem;
-        padding-top: .31rem;
+        padding-top: .36rem;
         cursor: pointer;
         .swiperIn{
             position: relative;
             height: 100%;
-            border-left: 1px solid white;
+            border-left: 1px solid rgba(255,255,255,0.3);
             .setTime{
                 position: absolute;
                 left: 0;
@@ -176,9 +190,12 @@
             }
             li{
                 margin-top: .1rem;
-                min-height: .34rem;
-                width: 2.5rem;
-                &.active{
+                height: .34rem;
+                width: 3rem;
+                box-sizing: border-box;
+                .txt();
+                &.lActive{
+                    box-sizing: border-box;
                     border:1px solid #fff200;
                     .xing{
                         color: #fff200;
@@ -188,9 +205,7 @@
             .haveCon{
                 margin-top: .1rem;
                 min-height: .34rem;
-                width: 2.5rem;
                 line-height: .34rem;
-                //padding: .1rem;
                 padding-left: .1rem;
                 background: rgba(255,255,255,0.1);
                 border-radius: 3px;
@@ -200,9 +215,44 @@
                   vertical-align: middle;
                   margin-right: .06rem;
                 }
+                &:hover{
+                    color: @hoverColor;
+                }
             }
             .holpPlace{
                 background: none;
+            }
+            .addNew{
+                .haveCon();
+                .jia{
+                    vertical-align: middle;
+                    margin-right: .06rem;
+                    color: #c81326;
+                }
+            }
+            .sBlue{
+                background: #0486bb;
+                .bTime{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: .12rem;
+                    height: .12rem;
+                    background: url("../images/db_01.png") no-repeat;
+                    background-size: 100% 100%;
+                    margin-right: .06rem;
+                }
+            }
+            .sRed{
+                background: #c81327;
+                .bFire{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: .09rem;
+                    height: .12rem;
+                    background: url("../images/db_02.png") no-repeat;
+                    background-size: 100% 100%;
+                    margin-right: .06rem;
+                }
             }
         }
     }

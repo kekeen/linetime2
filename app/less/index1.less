@@ -1,19 +1,38 @@
 @charset "utf-8";
 @import "./base/base.less";
 @import "./base/conn.less";
-
-
+/*下拉重点报道按钮开始*/
+.control{
+  position: absolute;
+  z-index: 1005;
+  top: .95rem;
+  right: .25rem;
+  a{
+    display: block;
+    width: .21rem;
+    height: .21rem;
+    background: url("../images/index-up.png") no-repeat;
+    background-size: 100% 100%;
+    &.up{/*向上拉*/
+      display: block;
+      width: .21rem;
+      height: .21rem;
+      background: url("../images/index-down.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+/*下拉重点报道按钮结束*/
 /*新闻专题*/
 .newSubject{
   width: 100%;
-  //margin-top: 1.2rem;
   margin-top: 1.1rem;
+  height: 7.7rem;
   .nLeft{
     position: relative;
     float: left;
     margin-left: 0.5%;
     width:72%;
-    //overflow: hidden;
     .edit{
       position: absolute;
       z-index: 1000;
@@ -23,32 +42,32 @@
     }
     .edit a{
       display: block;
-      //width: 0.84rem;
-      //height: 0.3rem;
-      padding: .02rem .08rem;
+      padding: .02rem .18rem;
       line-height: 0.3rem;
       border-radius: 3px;
       background: white;
       text-align: center;
       font-size: 0.14rem;
       color: #000;
+      &:hover{
+        color: @hoverColor;
+      }
     }
     .labelBox{
       margin-top: .1rem;
       padding: .1rem;
       width: 100%;
-      height: 1rem;
+      height: 0.9rem;
       background: rgba(255,255,255,0.2);
       border-radius: 3px;
       .lTextarea{
         display: inline-block;
         vertical-align: middle;
-        /*width: 90%;*/
         width: 100%;
         textarea{
           width: 100%;
-          height: 0.8rem;
-          line-height: 0.34rem;
+          height: 0.7rem;
+          line-height: 0.28rem;
           padding: .1rem .15rem 0 .15rem;
           /*background: rgba(255,255,255,0.2);*/
           background: none;
@@ -60,6 +79,7 @@
       }
       .lEdit{
         margin-left: .2rem;
+        margin-top: -.15rem;
         display: inline-block;
         vertical-align: middle;
         display: none;/*隐藏编辑框的*/
@@ -84,19 +104,27 @@
         }
       }
     }
-    /*案例排版*/
+    /*案例排版开始*/
     .caseBox{
+      position: relative;
       width: 100%;
-      margin-top: .15rem;
-      height: 6.3rem;
+      margin-top: .04rem;
+      height: 6.6rem;
+      background: url("../images/quxian.png") left center no-repeat;
+      background-size: 90% 90%;
       overflow: hidden;
+      .caseWrap{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
       .listDiv{
         float: left;
-        //width: 25%; //单个div的宽度
-        width: 3.8rem;
+        width: 3.9rem;//单个div的宽度
         .place{
           width: 100%;
-          height: 2rem;
+          height: 2.05rem;
           margin-top: .12rem;
         }
         /*单个案例--标题+摘要*/
@@ -104,11 +132,14 @@
           position: relative;
           width: 92%;//里面小div的宽度
           margin-top: .12rem;
-          height: 2rem;
+          height: 2.05rem;
           border-radius: 2px;
           background: rgba(255,255,255,0.2);
           padding: .1rem;
           cursor: pointer;
+          &.dActive{
+            border: 1px solid #fff200;
+          }
           .div1In{
             width: 100%;
             height: 100%;
@@ -121,6 +152,7 @@
                 text-align: left;
                 float: left;
                 width: 80%;
+                .txt();
                 i{
                   display: inline-block;
                   margin-left: .08rem;
@@ -213,7 +245,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(3,23,74,0.8);
             .aBox{
               margin-top: .6rem;
               padding-left: .6rem;
@@ -227,6 +259,9 @@
               margin-right: .6rem;
               display: inline-block;
               vertical-align: middle;
+              &:hover p{
+                color: @hoverColor;
+              }
               img{
                 display: block;
                 width: .4rem;
@@ -237,6 +272,9 @@
             .aDel{
               display: inline-block;
               vertical-align: middle;
+              &:hover p{
+                color: @hoverColor;
+              }
               img{
                 display: block;
                 width: .46rem;
@@ -247,6 +285,9 @@
           }
         }
         /*单个案例--图片描述*/
+        .imgDiv .div1In{
+          //height: 99% !important;
+        }
         .imgDiv .wenzhang{
           padding: 0 0.05rem !important;
         }
@@ -255,15 +296,211 @@
           padding: .06rem 0 .02rem 0 !important;
         }
         .imgDiv .wenzhang .wP2{
-          margin-top: 0.03rem !important;
+          margin-top: 0.06rem !important;
           width: 2.95rem;
           height: 1.08rem;
+          line-height: normal !important;
           img{
             width: 100%;
           }
         }
+        /*微博排版*/
+        .weiboDiv{
+          padding: inherit;
+          overflow: hidden;
+          .come{
+            margin: .1rem .1rem 0 .1rem;
+          }
+          .wMiao{
+            margin-top: .08rem;
+            padding: 0 .15rem;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            .tou{
+              display: inline-block;
+              vertical-align: top;
+              width: .42rem;
+              height: .42rem;
+              border-radius: 50%;
+              overflow: hidden;
+              img{
+                width: 100%;
+              }
+            }
+            .xiang{
+              width: 2.5rem;
+              margin-left: .15rem;
+              display: inline-block;
+              vertical-align: top;
+              color: #ffffff;
+              .p1{
+                font-size: .18rem;
+                .txt();
+              }
+              .p2{
+                font-size: .14rem;
+                .txt();
+              }
+            }
+            .wWen{
+              width: 100%;
+              //height: .7rem;
+              //padding: .05rem 0 .08rem 0;
+              line-height: .22rem;
+              margin: .05rem 0 .08rem 0;
+              text-indent: .12rem;
+              font-size: .14rem;
+              color: #ffffff;
+              //.txtmore(3);
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp:3;
+              -webkit-box-orient: vertical;
+              text-overflow: ellipsis;
+              //overflow: hidden;
+              .sYellow{
+                color: #ffda24;
+              }
+            }
+          }
+          .handle{
+            padding: .1rem .15rem 0 .15rem;
+            li{
+              float: left;
+            }
+            .relay{
+              .rb{
+                margin-right: .02rem;
+                display: inline-block;
+                vertical-align: middle;
+                width: .11rem;
+                height: .11rem;
+                background: url("../images/zf_02.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            .discuss{
+              margin-left: .9rem;
+              .rb{
+                margin-right: .02rem;
+                display: inline-block;
+                vertical-align: middle;
+                width: .11rem;
+                height: .11rem;
+                background: url("../images/zf_03.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            .giveGood{
+              float: right;
+              .rb{
+                margin-right: .02rem;
+                display: inline-block;
+                vertical-align: middle;
+                width: .11rem;
+                height: .11rem;
+                background: url("../images/zf_01.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+          }
+        }
       }
     }
+    /*案例排版结束*/
+    /*内容放大开始*/
+    .bigContent{
+      display: none;
+      background: #013879;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: .96rem;
+      width: 100%;
+      margin-top: .04rem;
+      height: 6.7rem;
+      color: #ffffff;
+      ul{
+        li{
+          width: 100%;
+          height: 100%;
+          display: none;
+          &.liShow{
+            display: block;
+          }
+        }
+      }
+      .bH1{
+        margin-top: .3rem;
+        text-align: center;
+        font-size: .36rem;
+      }
+      .lCon{
+        padding: 0 5%;
+        margin-top: .2rem;
+        .cLeft{
+          width: 58%;
+          //width: 68%;
+          float: left;
+          //background: red;
+          .lWen{
+            margin-top: .9rem;
+            padding: 0 .4rem 0 .1rem;
+            font-size: .24rem;
+            text-indent: 30px;
+          }
+          .lA a{
+            float: right;
+            margin:.3rem .4rem 0 0;
+            color: #efe300;
+            font-size: .18rem;
+          }
+        }
+        .cRight{
+          width: 42%;
+          //width: 32%;
+          float: right;
+          //background: purple;
+          .imgWrap{
+            width: 5.8rem;
+            height: 4.9rem;
+            padding: .2rem;
+            background: rgba(255,255,255,0.2);
+            img{
+              width: 5.38rem;
+            }
+          }
+        }
+      }
+      .moveLeft{
+        position: absolute;
+        left: .2rem;
+        top: 50%;
+        margin-top: -0.9rem;
+        display: block;
+        width: .48rem;
+        height: 1.4rem;
+        border-radius: 4px;
+        background:#27568d url("../images/fangda_left.png") no-repeat center;
+      }
+      .moveRight{
+        position: absolute;
+        right: .2rem;
+        top: 50%;
+        margin-top: -0.9rem;
+        display: block;
+        width: .48rem;
+        height: 1.4rem;
+        border-radius: 4px;
+        background:#27568d url("../images/fangda_right.png") no-repeat center;
+      }
+      .bigClose{
+        position: absolute;
+        top: -.9rem;
+        right: .08rem;
+        font-size: .24rem;
+      }
+    }
+    /*内容放大结束*/
   }
   /*右边重点报道开始*/
   .nRight{
@@ -289,31 +526,42 @@
         font-size: .14rem;
         color: #010101;
       }
-      .control{
-        float: right;
-        a{
-          display: block;
-          width: .21rem;
-          height: .21rem;
-          background: url("../images/index-down.png") no-repeat;
-          background-size: 100% 100%;
-          &.up{/*向上拉*/
-            display: block;
-            width: .21rem;
-            height: .21rem;
-            background: url("../images/index-up.png") no-repeat;
-            background-size: 100% 100%;
-          }
-        }
-      }
+      //.control{
+      //  float: right;
+      //  a{
+      //    display: block;
+      //    width: .21rem;
+      //    height: .21rem;
+      //    background: url("../images
+      //
+      //
+      //
+      // /index-down.png") no-repeat;
+      //    background-size: 100% 100%;
+      //    &.up{/*向上拉*/
+      //      display: block;
+      //      width: .21rem;
+      //      height: .21rem;
+      //      background: url("../images/index-up.png") no-repeat;
+      //      background-size: 100% 100%;
+      //    }
+      //  }
+      //}
     }
     .keyNote{
       width: 100%;
-      height: 7.4rem;
+      height: 7.42rem;
       margin-top: .13rem;
       background: rgba(0,29,68,0.5);
+      /*图文排版开始*/
+      .describeWrap{
+        height: 7.42rem;
+        padding: 0 .1rem;
+      }
       .descriptBox{
+        height: 7.42rem;
         padding: 0 .25rem;
+        padding-bottom: .25rem;
         .boxIn{
           width: 100%;
         }
@@ -381,6 +629,14 @@
         .bCont{
           font-size: .16rem;
           color: #ffffff;
+          .bImg{
+            margin-top: .22rem;
+            //width: 3.9rem;
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
           p{
             margin-top: .22rem;
             line-height: .24rem;
@@ -388,6 +644,225 @@
           }
         }
       }
+      /*图文排版结束*/
+      /*微博排版开始*/
+      .blogWrap{
+        background: rgba(21,49,88,0.5);
+        .bHead{
+          margin-top: .15rem;
+          padding: 0 .12rem;
+          .hPic{
+            display: inline-block;
+            vertical-align: top;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+              width: 100%;
+            }
+          }
+          .hDes{
+            margin-left: .12rem;
+            display: inline-block;
+            vertical-align: top;
+            width: 4.05rem;
+            .tP{
+              width: 2.2rem;
+              font-size: .18rem;
+              color: #ffffff;
+              float: left;
+              .txt();
+            }
+            .tTubiao{
+              float: right;
+              //width: 1.5rem;
+              .txt();
+              i{
+                display: inline-block;
+                margin-left: .1rem;
+              }
+              .lanV{
+                display: inline-block;
+                width: .14rem;
+                height: .14rem;
+                background: url("../images/g_n1.png") no-repeat;
+                background-size: 100% 100%;
+              }
+              .dangshi{
+                display: inline-block;
+                width: .18rem;
+                height: .14rem;
+                background: url("../images/g_n2.png") no-repeat;
+                background-size: 100% 100%;
+              }
+              .shoufa{
+                display: inline-block;
+                width: .14rem;
+                height: .16rem;
+                background: url("../images/g_n3.png") no-repeat;
+                background-size: 100% 100%;
+              }
+              .ganshi{
+                display: inline-block;
+                width: .16rem;
+                height: .16rem;
+                background: url("../images/g_n4.png") no-repeat;
+                background-size: 100% 100%;
+              }
+              .baodian{
+                display: inline-block;
+                width: .16rem;
+                height: .16rem;
+                background: url("../images/g_n5.png") no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            .dMiao{
+              margin-top: .08rem;
+              font-size: .14rem;
+              color: #ffffff;
+            }
+            .dXiang{
+              margin-top: .06rem;
+              margin-bottom: .08rem;
+              line-height: .24rem;
+              font-size: .16rem;
+              color: #ffffff;
+              .xYellow{
+                color: #ffda24;
+              }
+            }
+          }
+        }
+        .bWho{
+          width: 100%;
+          padding: 0 .2rem 0 .75rem;
+          border-bottom: 1px solid rgba(255,255,255,0.2);
+          background: rgba(255,255,255,0.2);
+          color: #ffffff;
+          .p1{
+            font-size: .18rem;
+            margin:.12rem 0 .06rem 0;
+          }
+          .p2{
+            font-size: .16rem;
+            line-height: .26rem;
+          }
+          .bPic{
+            width: 3.9rem;
+            height: 1.35rem;
+            margin-top: .1rem;
+            padding-top: .08rem;
+            background: rgba(255,255,255,0.3);
+            img{
+              float: left;
+              margin-left: .08rem;
+              border: none;
+              width: 1.2rem;
+              height: 1.2rem;
+            }
+          }
+          .bControl{
+            margin: .18rem 0;
+            font-size: .14rem;
+            .cToday{
+              //width: 1rem;
+              float: left;
+            }
+            .cHandle{
+              float: right;
+              padding-right: .1rem;
+              a{
+                float: right;
+                margin-left: .3rem;
+              }
+              .relay .rb{
+                display: inline-block;
+                vertical-align: middle;
+                width: .11rem;
+                height: .11rem;
+                background: url("../images/zf_02.png") no-repeat;
+                background-size: 100% 100%;
+                margin-right: .02rem;
+              }
+              .discuss .rb{
+                display: inline-block;
+                vertical-align: middle;
+                width: .11rem;
+                height: .11rem;
+                background: url("../images/zf_03.png") no-repeat;
+                background-size: 100% 100%;
+                margin-right: .02rem;
+              }
+              .giveGood .rb{
+                display: inline-block;
+                vertical-align: middle;
+                width: .11rem;
+                height: .11rem;
+                background: url("../images/zf_01.png") no-repeat;
+                background-size: 100% 100%;
+                margin-right: .02rem;
+              }
+            }
+          }
+        }
+        /*视频开始*/
+        .bVideo{
+          width: 100%;
+          padding: .18rem 0 .12rem .1rem;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+          background: rgba(255,255,255,0.1);
+          color: #ffffff;
+          .media{
+            width: 4.8rem;
+            background: black;
+          }
+        }
+        /*视频结束*/
+        .bBigControl{
+          padding:.12rem .3rem .35rem .3rem;
+          font-size: .14rem;
+          .relay{
+            float: left;
+            .rb{
+              display: inline-block;
+              vertical-align: middle;
+              width: .11rem;
+              height: .11rem;
+              background: url("../images/zf_02.png") no-repeat;
+              background-size: 100% 100%;
+              margin-right: .02rem;
+            }
+          }
+          .discuss{
+            float: left;
+            margin-left: 1.6rem;
+            .rb{
+              display: inline-block;
+              vertical-align: middle;
+              width: .11rem;
+              height: .11rem;
+              background: url("../images/zf_03.png") no-repeat;
+              background-size: 100% 100%;
+              margin-right: .02rem;
+            }
+          }
+          .giveGood{
+            float: right;
+            .rb{
+              display: inline-block;
+              vertical-align: middle;
+              width: .11rem;
+              height: .11rem;
+              background: url("../images/zf_01.png") no-repeat;
+              background-size: 100% 100%;
+              margin-right: .02rem;
+            }
+          }
+        }
+      }
+      /*微博排版结束*/
     }
   }
 }
