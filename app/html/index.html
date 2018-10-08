@@ -1,7 +1,9 @@
 <%- include('../templates/head') %>
+<%- include('../templates/foot') %>
 <body xmlns="http://www.w3.org/1999/html">
     <!--头部开始-->
     <%- include('../templates/header') %>
+
     <!--头部结束-->
     <!--下拉重点报道按钮开始-->
     <div class="control">
@@ -14,7 +16,7 @@
             <div class="edit"><a href="javascript:;">编辑专题</a></div>
             <div class="labelBox">
                 <div class="lTextarea">
-                    <textarea disabled="true">微信公号”和菜头“转发了疑似推手微信公号”国际网“的文章”叙利亚问题的解决之道“，获得了10万+的阅读，对事件造成了比较大的推动作用对事件造成了比较大的推动作用（最好是可以列出数据做支撑）</textarea>
+                    <textarea disabled="true">微信公号”和菜头“转发了疑似推手微信公号”国际网“的文章”叙利亚问题的解决之道“，获得了10万+的阅读，对事件造成了比较大的推动作用对事件造成了比较大的推动作用（最好是可以列出数据做支撑）微信公号”和菜头“转发了疑似推手微信公号”国际网“的文章”叙利亚问题的解决之道“，获得了10万+的阅读，对事件造成了比较大的推动作用对事件造成了比较大的推动作用（最好是可以列出数据做支撑）微信公号”和菜头“转发了疑似推手微信公号”国际网“的文章”叙利亚问题的解决之道“，获得了10万+的阅读，对事件造成了比较大的推动作用对事件造成了比较大的推动作用（最好是可以列出数据做支撑）</textarea>
                 </div>
                 <div class="lEdit">
                     <a href="javascript:;">
@@ -32,14 +34,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                        <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -49,25 +51,25 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            <!-- 鼠标经过放大弹框开始 -->
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            <!-- 鼠标经过放大弹框结束 -->
+                            <!-- 鼠标经过编辑弹框开始 -->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
+                            <!-- 鼠标经过编辑弹框结束 -->
                         </div>
                         <!--标题描述排版结束-->
                         <!--微博排版开始-->
@@ -75,14 +77,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                        <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wMiao">
@@ -118,25 +120,25 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            <!-- 鼠标经过放大弹框开始 -->
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            <!-- 鼠标经过放大弹框结束 -->
+                            <!-- 鼠标经过编辑弹框开始 -->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
+                            <!-- 鼠标经过编辑弹框结束 -->
                         </div>
                         <!--微博排版结束-->
                         <!--图片排版开始-->
@@ -144,14 +146,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -161,25 +163,25 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            <!-- 鼠标经过放大弹框开始 -->
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            <!-- 鼠标经过放大弹框结束 -->
+                            <!-- 鼠标经过编辑弹框开始 -->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
+                            <!-- 鼠标经过编辑弹框结束 -->
                         </div>
                         <!--图片排版结束-->
                     </div>
@@ -190,14 +192,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -215,11 +217,11 @@
                             <!--鼠标经过编辑弹框开始-->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
@@ -233,14 +235,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -258,11 +260,11 @@
                             <!--鼠标经过编辑弹框开始-->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
@@ -275,19 +277,20 @@
                     <div class="listDiv">
                         <div class="_con place"></div>
                         <div class="_con place"></div>
+                        <div class="_con place"></div>
                         <!--图片排版开始-->
-                        <div class="_con detailsDiv imgDiv">
+                        <!-- <div class="_con detailsDiv imgDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -297,26 +300,117 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
+                        <!--图片排版结束-->
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <!--标题描述排版开始-->
+                        <!-- <div class="_con detailsDiv">
+                            <div class="div1In">
+                                <div class="come">
+                                    <div class="comeL">
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
+                                    </div>
+                                    <div class="comeR">
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
+                                    </div>
+                                </div>
+                                <div class="wenzhang">
+                                    <div class="wenzhangIn">
+                                        <p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>
+                                        <p class="wP2">最近收到【CCTV创业英雄汇】金牌导师伍老师的邀请，将持续给大家带来关于微商创业的一些经验。今天的主题：“微商厂家货源有哪些骗局”众所周知，《联合国宪章》是国际关系的指导准则。《联合国宪章》是国际关系的指导准则。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            鼠标经过放大弹框开始
+                            <div class="hoverDiv">
+                                <div class="img"></div>
+                            </div>
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
+                            <div class="editDiv">
+                                <div class="aBox">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
+                                        <img src="../images/index-sEdit.png"/>
+                                        <p>重新编辑内容</p>
+                                    </a>
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
+                                        <img src="../images/index-sClose.png"/>
+                                        <p>删除本条记录</p>
+                                    </a>
+                                </div>
+                            </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
+                        <!--标题描述排版结束-->
+                        <!--图片排版开始-->
+                        <!-- <div class="_con detailsDiv imgDiv">
+                            <div class="div1In">
+                                <div class="come">
+                                    <div class="comeL">
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
+                                    </div>
+                                    <div class="comeR">
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
+                                    </div>
+                                </div>
+                                <div class="wenzhang">
+                                    <div class="wenzhangIn">
+                                        <p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>
+                                        <p class="wP2"><img src="../images/index-sPic.png"/></p>
+                                    </div>
+                                </div>
+                            </div>
+                            鼠标经过放大弹框开始
+                            <div class="hoverDiv">
+                                <div class="img"></div>
+                            </div>
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
+                            <div class="editDiv">
+                                <div class="aBox">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
+                                        <img src="../images/index-sEdit.png"/>
+                                        <p>重新编辑内容</p>
+                                    </a>
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
+                                        <img src="../images/index-sClose.png"/>
+                                        <p>删除本条记录</p>
+                                    </a>
+                                </div>
+                            </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--图片排版结束-->
                     </div>
                     <div class="listDiv">
@@ -326,14 +420,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -351,11 +445,11 @@
                             <!--鼠标经过编辑弹框开始-->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
@@ -369,14 +463,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -394,11 +488,11 @@
                             <!--鼠标经过编辑弹框开始-->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
@@ -415,14 +509,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -440,11 +534,11 @@
                             <!--鼠标经过编辑弹框开始-->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
@@ -458,14 +552,14 @@
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -483,11 +577,11 @@
                             <!--鼠标经过编辑弹框开始-->
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
@@ -499,19 +593,21 @@
                     </div>
                     <div class="listDiv">
                         <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
                         <!--标题描述排版开始-->
-                        <div class="_con detailsDiv">
+                        <!-- <div class="_con detailsDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -521,40 +617,40 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--标题描述排版结束-->
                         <!--图片排版开始-->
-                        <div class="_con detailsDiv imgDiv">
+                        <!-- <div class="_con detailsDiv imgDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -564,43 +660,45 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--图片排版结束-->
                     </div>
                     <div class="listDiv">
                         <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
                         <!--标题描述排版开始-->
-                        <div class="_con detailsDiv">
+                        <!-- <div class="_con detailsDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -610,40 +708,40 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--标题描述排版结束-->
                         <!--图片排版开始-->
-                        <div class="_con detailsDiv imgDiv">
+                        <!-- <div class="_con detailsDiv imgDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -653,43 +751,45 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--图片排版结束-->
                     </div>
                     <div class="listDiv">
                         <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
                         <!--标题描述排版开始-->
-                        <div class="_con detailsDiv">
+                        <!-- <div class="_con detailsDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -699,40 +799,40 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--标题描述排版结束-->
                         <!--图片排版开始-->
-                        <div class="_con detailsDiv imgDiv">
+                        <!-- <div class="_con detailsDiv imgDiv">
                             <div class="div1In">
                                 <div class="come">
                                     <div class="comeL">
-                                        <i class="lanV"></i>
-                                        <i class="dangshi"></i>
-                                        <i class="shoufa"></i>
-                                        <i class="ganshi"></i>
-                                        <i class="baodian"></i>
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                     </div>
                                     <div class="comeR">
-                                        <i class="fa fa-edge ie"></i>
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
                                     </div>
                                 </div>
                                 <div class="wenzhang">
@@ -742,58 +842,280 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--鼠标经过放大弹框开始-->
+                            鼠标经过放大弹框开始
                             <div class="hoverDiv">
                                 <div class="img"></div>
                             </div>
-                            <!--鼠标经过放大弹框结束-->
-                            <!--鼠标经过编辑弹框开始-->
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
                             <div class="editDiv">
                                 <div class="aBox">
-                                    <a class="aEdit" href="javascript:;">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
                                         <img src="../images/index-sEdit.png"/>
                                         <p>重新编辑内容</p>
                                     </a>
-                                    <a class="aDel" href="javascript:;" data-toggle="modal" data-target="#delRecord">
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
                                         <img src="../images/index-sClose.png"/>
                                         <p>删除本条记录</p>
                                     </a>
                                 </div>
                             </div>
-                            <!--鼠标经过编辑弹框结束-->
-                        </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
                         <!--图片排版结束-->
                     </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <!-- <div class="_con place"></div> -->
+                        <!--标题描述排版开始-->
+                        <div class="_con detailsDiv">
+                            <div class="div1In">
+                                <div class="come">
+                                    <div class="comeL">
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
+                                    </div>
+                                    <div class="comeR">
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
+                                    </div>
+                                </div>
+                                <div class="wenzhang">
+                                    <div class="wenzhangIn">
+                                        <p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>
+                                        <p class="wP2">最近收到【CCTV创业英雄汇】金牌导师伍老师的邀请，将持续给大家带来关于微商创业的一些经验。今天的主题：“微商厂家货源有哪些骗局”众所周知，《联合国宪章》是国际关系的指导准则。《联合国宪章》是国际关系的指导准则。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 鼠标经过放大弹框开始 -->
+                            <div class="hoverDiv">
+                                <div class="img"></div>
+                            </div>
+                            <!-- 鼠标经过放大弹框结束 -->
+                            <!-- 鼠标经过编辑弹框开始 -->
+                            <div class="editDiv">
+                                <div class="aBox">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
+                                        <img src="../images/index-sEdit.png"/>
+                                        <p>重新编辑内容</p>
+                                    </a>
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
+                                        <img src="../images/index-sClose.png"/>
+                                        <p>删除本条记录</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 鼠标经过编辑弹框结束 -->
+                        </div>
+                        <!--标题描述排版结束-->
+                        <!--图片排版开始-->
+                        <!-- <div class="_con detailsDiv imgDiv">
+                            <div class="div1In">
+                                <div class="come">
+                                    <div class="comeL">
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
+                                    </div>
+                                    <div class="comeR">
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
+                                    </div>
+                                </div>
+                                <div class="wenzhang">
+                                    <div class="wenzhangIn">
+                                        <p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>
+                                        <p class="wP2"><img src="../images/index-sPic.png"/></p>
+                                    </div>
+                                </div>
+                            </div>
+                            鼠标经过放大弹框开始
+                            <div class="hoverDiv">
+                                <div class="img"></div>
+                            </div>
+                            鼠标经过放大弹框结束
+                            鼠标经过编辑弹框开始
+                            <div class="editDiv">
+                                <div class="aBox">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
+                                        <img src="../images/index-sEdit.png"/>
+                                        <p>重新编辑内容</p>
+                                    </a>
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
+                                        <img src="../images/index-sClose.png"/>
+                                        <p>删除本条记录</p>
+                                    </a>
+                                </div>
+                            </div>
+                            鼠标经过编辑弹框结束
+                        </div> -->
+                        <!--图片排版结束-->
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <!-- <div class="_con place"></div> -->
+                        <!--标题描述排版开始-->
+                        <div class="_con detailsDiv">
+                            <div class="div1In">
+                                <div class="come">
+                                    <div class="comeL">
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
+                                    </div>
+                                    <div class="comeR">
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
+                                    </div>
+                                </div>
+                                <div class="wenzhang">
+                                    <div class="wenzhangIn">
+                                        <p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>
+                                        <p class="wP2">最近收到【CCTV创业英雄汇】金牌导师伍老师的邀请，将持续给大家带来关于微商创业的一些经验。今天的主题：“微商厂家货源有哪些骗局”众所周知，《联合国宪章》是国际关系的指导准则。《联合国宪章》是国际关系的指导准则。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 鼠标经过放大弹框开始 -->
+                            <div class="hoverDiv">
+                                <div class="img"></div>
+                            </div>
+                            <!-- 鼠标经过放大弹框结束 -->
+                            <!-- 鼠标经过编辑弹框开始 -->
+                            <div class="editDiv">
+                                <div class="aBox">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
+                                        <img src="../images/index-sEdit.png"/>
+                                        <p>重新编辑内容</p>
+                                    </a>
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
+                                        <img src="../images/index-sClose.png"/>
+                                        <p>删除本条记录</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 鼠标经过编辑弹框结束 -->
+                        </div>
+                        <!--标题描述排版结束-->
+                    </div>
+                    <div class="listDiv">
+                        <div class="_con place"></div>
+                        <div class="_con place"></div>
+                        <!-- <div class="_con place"></div> -->
+                        <!--标题描述排版开始-->
+                        <div class="_con detailsDiv">
+                            <div class="div1In">
+                                <div class="come">
+                                    <div class="comeL">
+                                        <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                        <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                        <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                         <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                        <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
+                                    </div>
+                                    <div class="comeR">
+                                        <i class="icon iconfont icon-web_ tBlue" title="网站"></i>
+                                    </div>
+                                </div>
+                                <div class="wenzhang">
+                                    <div class="wenzhangIn">
+                                        <p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>
+                                        <p class="wP2">最近收到【CCTV创业英雄汇】金牌导师伍老师的邀请，将持续给大家带来关于微商创业的一些经验。今天的主题：“微商厂家货源有哪些骗局”众所周知，《联合国宪章》是国际关系的指导准则。《联合国宪章》是国际关系的指导准则。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 鼠标经过放大弹框开始 -->
+                            <div class="hoverDiv">
+                                <div class="img"></div>
+                            </div>
+                            <!-- 鼠标经过放大弹框结束 -->
+                            <!-- 鼠标经过编辑弹框开始 -->
+                            <div class="editDiv">
+                                <div class="aBox">
+                                    <a class="aEdit" href="javascript:;" data-event="editReport">
+                                        <img src="../images/index-sEdit.png"/>
+                                        <p>重新编辑内容</p>
+                                    </a>
+                                    <a class="aDel" href="javascript:;" data-event="delReport">
+                                        <img src="../images/index-sClose.png"/>
+                                        <p>删除本条记录</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 鼠标经过编辑弹框结束 -->
+                        </div>
+                        <!--标题描述排版结束-->
+                    </div>
+
                 </div>
             </div>
             <!--案例排版结束-->
             <!--内容放大开始-->
             <div class="bigContent">
                 <ul>
+                    <!-- 没图片开始 -->
                     <li class="clearfix">
                         <p class="bH1">微博发起活动为叙利亚平民祈福1</p>
                         <div class="lCon">
                             <div class="cLeft">
-                                <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
-                            </div>
-                            <div class="cRight">
-                                <div class="imgWrap"><img src="../images/fangda.png"/></div>
+                                <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                         </div>
                     </li>
-                    <li class="clearfix">
+                    <!-- 没图片结束 -->
+                    <!-- 图片+标题开始 -->
+                    <li class="clearfix imgTit">
                         <p class="bH1">微博发起活动为叙利亚平民祈福2</p>
                         <div class="lCon">
-                            <div class="cLeft">
-                                <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
-                            </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                         </div>
                     </li>
+                    <!-- 图片+标题结束 -->
+                    <!-- 图文开始 -->
                     <li class="clearfix">
                         <p class="bH1">微博发起活动为叙利亚平民祈福3</p>
                         <div class="lCon">
@@ -806,12 +1128,13 @@
                             </div>
                         </div>
                     </li>
+                    <!-- 图文结束 -->
                     <li class="clearfix">
                         <p class="bH1">微博发起活动为叙利亚平民祈福4</p>
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -823,7 +1146,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -835,7 +1158,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -847,7 +1170,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -859,7 +1182,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -871,7 +1194,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -895,7 +1218,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -907,31 +1230,31 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
                             </div>
                         </div>
                     </li>
-                    <li class="clearfix">
+                    <!-- <li class="clearfix">
                         <p class="bH1">微博发起活动为叙利亚平民祈福13</p>
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
                             </div>
                         </div>
-                    </li>
-                    <li class="clearfix">
+                    </li> -->
+                    <!-- <li class="clearfix">
                         <p class="bH1">微博发起活动为叙利亚平民祈福14</p>
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -943,7 +1266,7 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
@@ -955,13 +1278,13 @@
                         <div class="lCon">
                             <div class="cLeft">
                                 <p class="lWen">众所周知，《联合国宪章》是国际关系的指导指导准则。《联合国宪章》明确提出，应力行容恕，以和平方法解决国际争端。因此，在通过联合国机制解决叙利亚危机方面，任何有倾向性的条款，都可能有违和平努力，加剧叙利亚危机，并殃及地区安全稳定。</p>
-                                <p class="lA"><a href="javascript:;">查看原文>></a></p>
+                                <p class="lA"><a href="报道详情.html">查看原文>></a></p>
                             </div>
                             <div class="cRight">
                                 <div class="imgWrap"><img src="../images/fangda.png"/></div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <a class="moveLeft" href="javascript:;"></a>
                 <a class="moveRight" href="javascript:;"></a>
@@ -986,11 +1309,11 @@
                                     <span>2012-02-17 14:56</span>
                                 </p>
                                 <p class="tubiao">
-                                    <i class="lanV"></i>
-                                    <i class="dangshi"></i>
-                                    <i class="shoufa"></i>
-                                    <i class="ganshi"></i>
-                                    <i class="baodian"></i>
+                                    <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                    <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                    <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                    <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                    <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                 </p>
                             </div>
                             <div class="bCont">
@@ -1014,11 +1337,11 @@
                             <div class="dTit clearfix">
                                 <p class="tP"><a href="javascript:;">可爱萌宠乐园可爱萌宠乐园可爱萌宠乐园可爱萌宠乐园</a></p>
                                 <P class="tTubiao">
-                                    <i class="lanV"></i>
-                                    <i class="dangshi"></i>
-                                    <i class="shoufa"></i>
-                                    <i class="ganshi"></i>
-                                    <i class="baodian"></i>
+                                    <i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>
+                                    <i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>
+                                    <i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>
+                                    <i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>
+                                    <i class="icon iconfont icon-lr_ tRed" title="爆点"></i>
                                 </P>
                             </div>
                             <p class="dMiao">3月8日 09:41 来自 微博 weibo.com </p>
@@ -1078,469 +1401,754 @@
         </div>
     </div>
     <!--新闻专题结束-->
-    <!--删除提示开始-->
-    <div class="modal fade" id="delRecord">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">删除</h4>
-                </div>
-                <div class="modal-body">
-                    <p class="body-txt">确认删除本条记录？</p>
-                </div>
-                <div class="modal-footer">
-                    <button id="btn" type="button" class="btn yes">确定</button>
-                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--删除提示结束-->
     <!--尾部开始-->
     <%- include('../templates/footer') %>
     <!--尾部结束-->
 
 
     <!-- 模态框 -->
-    <!-- 编辑报道 -->
-    <div class="modal fade" id="editReport">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">编辑报道</h4>
+    <!-- 编辑报道开始 -->
+    <div class="modal-body" id='editReport'>
+        <ul class="modal-list">
+            <li>
+                <label>标签：</label>
+                <div class="list-right">
+                    <div class="list-report-label">
+                        <ul class="list-right-btn list-right-btn1 clearfix">
+                            <li>
+                                <a href="javascript:;" class="active">
+                                    <i class="icon iconfont icon-lr_1"></i>
+                                    首发
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-lr_"></i>
+                                    爆点
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_2"></i>
+                                    当事人
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_6"></i>
+                                    当事方
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_3"></i>
+                                    干系人
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="active">
+                                    <i class="icon iconfont icon-lr_5"></i>
+                                    蓝V
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_5"></i>
+                                    橙V
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="active">
+                                    <i class="icon iconfont icon-lr_7"></i>
+                                    达人
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_8"></i>
+                                    疑似推手
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_9"></i>
+                                    重要媒体
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_14"></i>
+                                    权威机构
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-piyao"></i>
+                                    辟谣
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-zhongbaodao"></i>
+                                    重点报道
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-la_4"></i>
+                                    央媒
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_12"></i>
+                                    通稿
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_11"></i>
+                                    地方政府媒体
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_13"></i>
+                                    意见领袖
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-la_2"></i>
+                                    热点博主
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_10"></i>
+                                    自定义媒体
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="">
+                                    <i class="icon iconfont icon-lr_15"></i>
+                                    行业大佬
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="edit-more-btn _edit-more-btn1">
+                            <a href="javascript:;" class="more-btn">
+                                更多
+                            </a>
+                            <div class="addBox">
+                                <a href="javascript:;" class="add-btn"><i></i></a>
+                                <div class="addContent">
+                                    <span class="sanjiao"></span>
+                                    <p class="name">
+                                        <i class="redStart"></i>
+                                        <span class="biao">标签名称：</span>
+                                        <input type="text" class="nInt form-control" placeholder="事件发生">
+                                        <span class="xian">(限6个字)</span>
+                                    </p>
+                                    <p class="name xuanT">
+                                        <i class="redStart"></i>
+                                        <span class="biao">选择图标：</span>
+                                    </p>
+                                    <div class="iconWrap">
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_1"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_2"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_3"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_4"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_5"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_6"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_7"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_8"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_9"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_10"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_11"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_12"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_14"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_15"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_16"></i></a>
+                                    </div>
+                                    <div class="aControl">
+                                        <a class="cancel" href="javascript:;">取消</a>
+                                        <a class="save" href="javascript:;">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-label">
+                        <ul class="list-right-btn list-right-btn2 clearfix ">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-la_1"></i>
+                                    热搜
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-shifa"></i>
+                                    事件发生
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="active">
+                                    <i class="icon iconfont icon-ld_"></i>
+                                    事件平息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-ld_3"></i>
+                                    热点转移话题
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-ld_2"></i>
+                                    事件延伸话题
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-la_3"></i>
+                                    删帖
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-ld_4"></i>
+                                    报道最多
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon iconfont icon-ld_1"></i>
+                                    评论最多
+                                </a>
+                            </li>
+                            </li>
+                            <li class="site">
+                                <a href="javascript:;">
+                                    <i></i>
+                                    新增项可删
+                                    <span>x</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="edit-more-btn _edit-more-btn2">
+                            <a href="javascript:;" class="more-btn">
+                            更多
+                            </a>
+                            <div class="addBox">
+                                <a href="javascript:;" class="add-btn"><i></i></a>
+                                <div class="addContent">
+                                    <span class="sanjiao"></span>
+                                    <p class="name">
+                                        <i class="redStart"></i>
+                                        <span class="biao">标签名称：</span>
+                                        <input type="text" class="nInt form-control" placeholder="事件发生">
+                                        <span class="xian">(限6个字)</span>
+                                    </p>
+                                    <p class="name xuanT">
+                                        <i class="redStart"></i>
+                                        <span class="biao">选择图标：</span>
+                                    </p>
+                                    <div class="iconWrap">
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_1"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_2"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_3"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_4"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_5"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_6"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_7"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_8"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_9"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_10"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_11"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_12"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_14"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_15"></i></a>
+                                        <a class="a" href="javascript:;"><i class="icon iconfont icon-bq_16"></i></a>
+                                    </div>
+                                    <div class="aControl">
+                                        <a class="cancel" href="javascript:;">取消</a>
+                                        <a class="save" href="javascript:;">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <ul class="modal-list">
+            </li>
+            <li>
+                <label>站点来源：</label>
+                <div class="list-right">
+                    <ul class="list-right-btn list-right-btn3 clearfix" id="web-btn">
                         <li>
-                            <label>标签：</label>
-                            <div class="list-right">
-                                <div class="list-report-label">
-                                    <ul class="list-right-btn clearfix">
-                                        <li>
-                                            <a href="javascript:;" class="active">
-                                                <i></i>
-                                                首发
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-2"></i>
-                                                爆点
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-3"></i>
-                                                当事人
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-4"></i>
-                                                当事方
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-5"></i>
-                                                干系人
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="active">
-                                                <i class="lr-6"></i>
-                                                蓝V
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-7"></i>
-                                                橙V
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="active">
-                                                <i class="lr-8"></i>
-                                                达人
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-9"></i>
-                                                疑似推手
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-10"></i>
-                                                重要媒体
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-11"></i>
-                                                自定义媒体
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-12"></i>
-                                                辟谣
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-13"></i>
-                                                重点报道
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-14"></i>
-                                                央煤
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-16"></i>
-                                                通稿
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-17"></i>
-                                                地方政府媒体
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-18"></i>
-                                                意见领袖
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-19"></i>
-                                                热点博主
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-20"></i>
-                                                权威机构
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="">
-                                                <i class="lr-21"></i>
-                                                行业大佬
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="edit-more-btn">
-                                        <a href="javascript:;" class="more-btn">
-                                            更多
-                                        </a>
-                                        <a href="javascript:;" class="add-btn"><i></i></a>
-                                    </div>
-                                </div>
-                                <div class="list-label">
-                                    <ul class="list-right-btn clearfix ">
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-1"></i>
-                                                热搜
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-2"></i>
-                                                事件发生
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="active">
-                                                <i class="ld-3"></i>
-                                                事件平息
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-4"></i>
-                                                热点转移话题
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-5"></i>
-                                                事件延伸话题
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-6"></i>
-                                                删帖
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-7"></i>
-                                                报道
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <i class="ld-8"></i>
-                                                评论
-                                            </a>
-                                        </li>
-                                        </li>
-                                        <li class="site">
-                                            <a href="javascript:;">
-                                                <i></i>
-                                                新增项可删
-                                                <span>x</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="edit-more-btn">
-                                        <a href="javascript:;" class="more-btn">
-                                        更多
-                                        </a>
-                                        <a href="javascript:;" class="add-btn"><i></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="javascript:;" class="active">
+                                <i class="icon iconfont icon-web_"></i>
+                                网站
+                            </a>
                         </li>
                         <li>
-                            <label>站点来源：</label>
-                            <div class="list-right">
-                                <ul class="list-right-btn clearfix" id="web-btn">
-                                    <li>
-                                        <a href="javascript:;" class="active">
-                                            <i class="web-1"></i>
-                                            网站
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="web-3"></i>
-                                            论坛
-                                        </a>
-                                    </li>
-                                    <li class="close-re-title">
-                                        <a href="javascript:;">
-                                            <i class="web-4"></i>
-                                            微博
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="web-5"></i>
-                                            微信
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="web-6"></i>
-                                            APP
-                                        </a>
-                                    </li>
-                                    <li class="close-re-title">
-                                        <a href="javascript:;">
-                                            <i class="web-7"></i>
-                                            facebook
-                                        </a>
-                                    </li>
-                                    <li class="close-re-title">
-                                        <a href="javascript:;">
-                                            <i class="web-8"></i>
-                                            twitter
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="web-9"></i>
-                                            境外网站
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="web-10"></i>
-                                            电子报刊
-                                        </a>
-                                    </li>
-                                    <li class="site">
-                                        <a href="javascript:;">
-                                            <i></i>
-                                            新增项
-                                            <span>x</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="edit-more-btn">
-                                    <a href="javascript:;" class="more-btn">
-                                    更多
-                                    </a>
-                                    <a href="javascript:;" class="add-btn"><i></i></a>
-                                </div>
-                            </div>
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_1"></i>
+                                论坛
+                            </a>
                         </li>
-                        <li class="report-box">
-                            <ul>
-                                <li>
-                                    <label>显示：</label>
-                                    <div class="list-right">
-                                        <ul class="list-checked clearfix">
-                                            <li>
-                                                <label><input type="checkbox">标题+图片</label>
-                                            </li>
-                                            <li>
-                                                <label><input type="checkbox">标题+摘要</label>
-                                            </li>
-                                            <li>
-                                                <label><input type="checkbox">摘要+图片</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label>报道方：</label>
-                                    <div class="list-right layut-times">
-                                        <input type="text" class="form-control" placeholder="不超过12个字">
-                                        <span class="span-txt">不超过12个字</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label>报道时间点：</label>
-                                    <div class="list-right layut-times">
-                                        <input type="text" class="form-control time-range time-bg" placeholder="请选择时间发布点">
-                                    </div>
-                                </li>
-                                <li>
-                                    <label>报道内容：</label>
-                                    <div class="list-right">
-                                        <ul class="report-con">
-                                            <li class="re-title">
-                                                <span class="con-span">
-                                                    <em>*</em>
-                                                     新闻标题：
-                                                </span>
-                                                <div class="list-right">
-                                                    <input type="text" name="" class="form-control" placeholder="叙利亚危机游行">
-                                                    <span class="span-txt"> 不超过30个字</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span class="con-span">
-                                                    <em>*</em>
-                                                    摘要：
-                                                </span>
-                                                <div class="list-right">
-                                                    <input type="text" name="" class="form-control" placeholder="学生游行导致叙利亚爆发危机">
-                                                    <span class="span-txt"> 不超过30个字</span>
-
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span class="con-span">
-                                                    <em>*</em>
-                                                    正文：
-                                                </span>
-                                                <div class="list-right">
-                                                    <textarea class="form-control" rows="6"></textarea>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="des-con">
-                            <ul>
-                                <li>
-                                    <label>显示：</label>
-                                    <div class="list-right">
-                                        <ul class="list-checked clearfix">
-                                            <li>
-                                                <label><input type="checkbox">描述+图片</label>
-                                            </li>
-                                            <li>
-                                                <label><input type="checkbox">描述</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label>描述：</label>
-                                    <div class="list-right">
-                                        <textarea class="form-control" rows="6"></textarea>
-                                    </div>
-                                </li>
-                            </ul>
+                        <li class="close-re-title">
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_2"></i>
+                                微博
+                            </a>
                         </li>
                         <li>
-                            <label>添加图片：</label>
-                            <div class="list-right">
-                                <ul class="layut-file clearfix">
-                                    <li>
-                                        <a href="javascript:;" class="ser-btn">
-                                        添加图片
-                                        </a>
-                                        <input type="file">
-                                    </li>
-                                    <li>
-                                        <ul class="upload-list">
-                                            <li>
-                                                <span>123.JPG</span>
-                                                <div class="pro-box">
-                                                    <span class="pro-percent">
-                                                        <i style="width:20%;"></i>
-                                                    </span>
-                                                    <span>20%</span>
-                                                    <span class="uploading">上传中</span>
-                                                </div>
-                                                <img src="../images/close.png" alt="" class="pull-right">
-                                            </li>
-                                            <li>
-                                                <span class="upload-name">123.JPG</span>
-                                                <div class="pro-box">
-                                                    <span class="uploading">上传成功</span>
-                                                </div>
-                                                <img src="../images/close.png" alt="" class="pull-right">
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_3"></i>
+                                微信
+                            </a>
                         </li>
                         <li>
-                            <label>标注：</label>
-                            <div class="list-right">
-                                <textarea rows="5" class="form-control" placeholder="限200个字"></textarea>
-                            </div>
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_5"></i>
+                                APP
+                            </a>
+                        </li>
+                        <li class="close-re-title">
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_4"></i>
+                                facebook
+                            </a>
+                        </li>
+                        <li class="close-re-title">
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_6"></i>
+                                twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_7"></i>
+                                境外网站
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon iconfont icon-web_8"></i>
+                                电子报刊
+                            </a>
+                        </li>
+                        <li class="site">
+                            <a href="javascript:;">
+                                <i></i>
+                                新增项
+                                <span>x</span>
+                            </a>
                         </li>
                     </ul>
+                    <div class="edit-more-btn _edit-more-btn2">
+                        <a href="javascript:;" class="more-btn">
+                        更多
+                        </a>
+                        <div class="addBox">
+                            <a href="javascript:;" class="add-btn"><i></i></a>
+                            <div class="addContent">
+                                <span class="sanjiao"></span>
+                                <p class="name">
+                                    <i class="redStart"></i>
+                                    <span class="biao">标签名称：</span>
+                                    <input type="text" class="nInt form-control" placeholder="事件发生">
+                                    <span class="xian">(限6个字)</span>
+                                </p>
+                                <p class="name xuanT">
+                                    <i class="redStart"></i>
+                                    <span class="biao">选择图标：</span>
+                                </p>
+                                <div class="iconWrap">
+                                    <a class="a aActive" href="javascript:;"><i class="icon iconfont icon-ly_1"></i></a>
+                                    <a class="a" href="javascript:;"><i class="icon iconfont icon-ly_2"></i></a>
+                                    <a class="a" href="javascript:;"><i class="icon iconfont icon-ly_3"></i></a>
+                                    <a class="a" href="javascript:;"><i class="icon iconfont icon-ly_4"></i></a>
+                                    <a class="a" href="javascript:;"><i class="icon iconfont icon-ly_5"></i></a>
+                                    <a class="a" href="javascript:;"><i class="icon iconfont icon-ly_6"></i></a>
+                                    <a class="a" href="javascript:;"><i class="icon iconfont icon-ly_7"></i></a>
+                                </div>
+                                <div class="aControl">
+                                    <a class="cancel" href="javascript:;">取消</a>
+                                    <a class="save" href="javascript:;">保存</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
-                    <button id="btn" type="button" class="btn yes">保存</button>
+            </li>
+            <li>
+                <label>报道方：</label>
+                <div class="list-right layut-times">
+                    <input type="text" class="form-control" placeholder="不超过12个字">
+                    <span class="span-txt">不超过12个字</span>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li>
+                <label>报道时间点：</label>
+                <div class="list-right layut-times">
+                    <input type="text" class="form-control time-range time-bg" placeholder="请选择时间发布点">
+                </div>
+            </li>
+            <li class="report-box">
+                <ul>
+                    <li>
+                        <label>显示：</label>
+                        <div class="list-right">
+                            <ul class="list-checked clearfix">
+                                <li>
+                                    <label><input type="checkbox">标题+图片</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox">标题+摘要</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox">摘要+图片</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="re-title">
+                        <label>
+                            <span class="con-span">
+                                <em>*</em>
+                                 新闻标题：
+                            </span>
+                        </label>
+                        <div class="list-right">
+                            <input type="text" name="" class="form-control" placeholder="叙利亚危机游行">
+                            <span class="span-txt"> 不超过30个字</span>
+                        </div>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="con-span">
+                                <em>*</em>
+                                摘要：
+                            </span>
+                        </label>
+                        <div class="list-right">
+                            <input type="text" name="" class="form-control" placeholder="学生游行导致叙利亚爆发危机">
+                            <span class="span-txt"> 不超过30个字</span>
+                        </div>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="con-span">
+                                <em>*</em>
+                                正文：
+                            </span>
+                        </label>
+                        <div class="list-right">
+                            <textarea class="form-control fTxt" rows="6"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="des-con">
+                <ul>
+                    <li>
+                        <label>显示：</label>
+                        <div class="list-right">
+                            <ul class="list-checked clearfix">
+                                <li>
+                                    <label><input type="checkbox">描述+图片</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox">描述</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label>描述：</label>
+                        <div class="list-right">
+                            <textarea class="form-control fTxt" rows="6"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="clearfix">
+                <label>添加图片：</label>
+                <div class="list-right">
+                    <div id="uploader">
+                        <!--用来存放item-->
+                        <div class="uploader-list">
+                            <ul class="filelist">
+                                <li>
+                                    <p class="title">share_05.png</p>
+                                    <p class="imgWrap"><img src="../images/hj.png"/></p>
+                                    <p class="progress"><span></span></p>
+                                    <p class="close"><i class="fa fa-times-circle"></i></p>
+                                    <span class="success"></span>
+                                    <p class="error">上传失败</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="filePicker">选择图片</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label>标注：</label>
+                <div class="list-right">
+                    <textarea rows="5" class="form-control fTxt" placeholder="限200个字" wrap="hard"></textarea>
+                </div>
+            </li>
+        </ul>
     </div>
+    <!-- 编辑报道结束 -->
+    <!-- 曲线开始 -->
+    <div class="curveWrap">
+       <div id="curve" style="width: 100%;"></div>
+    </div>
+    <!-- 曲线结束 -->
 
-
-    <%- include('../templates/foot') %>
-    <!--swiper引用开始-->
     <script>
+        // artDialog重新编辑引用开始
+        $('body').on('click','a[data-event=editReport]', function() {
+            var d = dialog({
+                title: '编辑报道',
+                content: $('#editReport').html(),
+                width:"12rem",
+                height:"8rem",
+                okValue: '确 定',
+                ok: function() {
+                    dialog()
+                        .title('提示2')
+                        .content('hello world')
+                        .button([{
+                            value: '打开',
+                            autofocus: true,
+                            callback: function() {
+                                dialog()
+                                    .title('提示')
+                                    .showModal();
+                            }
+                        }])
+                        .show();
+                    return false;
+                },
+                cancelValue: '取消',
+                cancel: function() {},
+                onshow: function () {
+                    //点击复选框
+                    $('input').iCheck({
+                        checkboxClass: 'icheckbox_flat-blue',
+                        radioClass: 'iradio_flat-blue',
+                        increaseArea: '20%' // optional
+                    });
+                    // 时间控件
+                    lay('.time-range').each(function(){
+                        laydate.render({
+                            elem: this,
+                            type: 'datetime'
+                        });
+                    });
+                }
+            });
+
+            d.showModal();
+
+        });
+        // artDialog重新编辑引用结束
+        // 点击底部新增报道开始
+        $('body').on('click','.footer .addNew',function () {
+            var thisInd = $(this).index();
+            var parentInd = $(this).closest('.swiper-slide').index();
+            var footerAdd = '<li class="addNew"><i class="fa fa-plus-circle jia"></i>新增报道</li>';//底部新增报道
+            var footerCon = '<li class="haveCon lActive"><i class="fa fa-star xing"></i><span class="span">微博发起</span></li>';//底部填充内容
+            //标题描述排版
+            var subjectCon1 = '<div class="_con detailsDiv dActive">'
+                            +'<div class="div1In">'
+                                +'<div class="come">'
+                                    +'<div class="comeL">'
+                                        +'<i class="icon iconfont icon-lr_4 tYellow" title="蓝V"></i>'
+                                        +'<i class="icon iconfont icon-lr_6 tGreenBlue" title="当事方"></i>'
+                                        +'<i class="icon iconfont icon-lr_1 tGreen" title="首发"></i>'
+                                        +'<i class="icon iconfont icon-lr_3 tLightYellow" title="干事人"></i>'
+                                        +'<i class="icon iconfont icon-lr_ tRed" title="爆点"></i>'
+                                    +'</div>'
+                                    +'<div class="comeR">'
+                                        +'<i class="icon iconfont icon-web_ tBlue" title="网站"></i>'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="wenzhang">'
+                                    +'<div class="wenzhangIn">'
+                                        +'<p class="wP">微博发起活动为叙利亚平民祈福微博发起活动为叙利亚平民祈福</p>'
+                                        +'<p class="wP2">最近收到【CCTV创业英雄汇】金牌导师伍老师的邀请，将持续给大家带来关于微商创业的一些经验。今天的主题：“微商厂家货源有哪些骗局”众所周知，《联合国宪章》是国际关系的指导准则。《联合国宪章》是国际关系的指导准则。</p>'
+                                    +'</div>'
+                                +'</div>'
+                            +'</div>'
+                            +'<!-- 鼠标经过放大弹框开始 -->'
+                            +'<div class="hoverDiv">'
+                                +'<div class="img"></div>'
+                            +'</div>'
+                            +'<!-- 鼠标经过放大弹框结束 -->'
+                            +'<!-- 鼠标经过编辑弹框开始 -->'
+                            +'<div class="editDiv">'
+                                +'<div class="aBox">'
+                                    +'<a class="aEdit" href="javascript:;" data-event="editReport">'
+                                        +'<img src="../images/index-sEdit.png"/>'
+                                        +'<p>重新编辑内容</p>'
+                                    +'</a>'
+                                    +'<a class="aDel" href="javascript:;" data-event="delReport">'
+                                        +'<img src="../images/index-sClose.png"/>'
+                                        +'<p>删除本条记录</p>'
+                                    +'</a>'
+                                +'</div>'
+                            +'</div>'
+                            +'<!-- 鼠标经过编辑弹框结束 -->'
+                        +'</div>'
+
+            var d = dialog({
+                title: '新增报道',
+                content: $('#editReport').html(),
+                width:"12rem",
+                height:"8rem",
+                okValue: '确 定',
+                ok: function() {
+                    //alert(0);
+                    $('.caseBox .detailsDiv').removeClass('dActive');
+                    $('.swiperIn .haveCon').removeClass('lActive');
+                    $('.footer .swiper-slide .yellow').hide();
+                    //添加下面时间轴标题
+                    if(thisInd == 0){
+                        $('.footer .swiper-slide:eq('+parentInd+') ul .addNew').replaceWith(footerCon);
+                        $('.footer .swiper-slide:eq('+parentInd+') .yellow').show();
+                    }else{
+                        $('.footer .swiper-slide:eq('+parentInd+') ul .addNew').replaceWith(footerCon);
+                        $('.footer .swiper-slide:eq('+parentInd+') ul li:eq('+thisInd+')').prev().replaceWith(footerAdd);
+                        $('.footer .swiper-slide:eq('+parentInd+') .yellow').show();
+                    }
+                    //添加上面内容
+                    $('.caseBox .listDiv:eq('+parentInd+') ._con:eq('+thisInd+')').replaceWith(subjectCon1);
+
+
+                },
+                cancelValue: '取消',
+                cancel: function() {},
+                onshow: function () {
+                    //点击复选框
+                    $('input').iCheck({
+                        checkboxClass: 'icheckbox_flat-blue',
+                        radioClass: 'iradio_flat-blue',
+                        increaseArea: '20%' // optional
+                    });
+                    // 时间控件
+                    lay('.time-range').each(function(){
+                        laydate.render({
+                            elem: this,
+                            type: 'datetime'
+                        });
+                    });
+                }
+            });
+
+            d.showModal();
+        })
+        // 点击底部新增报道结束
+        // 删除记录提示开始
+        $('body').on('click','a[data-event=delReport]', function() {
+            var _this = $(this);
+            var thisInd = $(this).closest('.detailsDiv').index();
+            var parentInd = $(this).closest('.listDiv').index();
+            var subjectPlace = '<div class="_con place"></div>';//上面内容填空
+            var footerPlace = '<li class="holpPlace"></li>';//下面时间轴填空
+            var footerAdd = '<li class="addNew"><i class="fa fa-plus-circle jia"></i>新增报道</li>';//下面时间轴用新增报道填空
+
+            var d = dialog({
+                title: '删除记录',
+                content: '确定要删除此记录吗',
+                width:"4rem",
+                okValue: '确 定',
+                ok: function() {
+                    //上面内容删除
+                    _this.closest('.listDiv').prepend(subjectPlace);
+                    _this.closest('.detailsDiv').remove();
+                    //下面时间轴删除
+                    var haveConLength = $('.footer .swiper-slide:eq('+parentInd+') .haveCon').length;
+                    if(haveConLength == '3'){
+                        $('.footer .swiper-slide:eq('+parentInd+') ul li:eq('+thisInd+')').remove();
+                        $('.footer .swiper-slide:eq('+parentInd+') ul').prepend(footerAdd);
+                        $('.footer .swiper-slide:eq('+parentInd+') .yellow').hide();
+                    }else{
+                        $('.footer .swiper-slide:eq('+parentInd+') ul li:eq('+thisInd+')').remove();
+                        $('.footer .swiper-slide:eq('+parentInd+') ul').prepend(footerPlace);
+                        $('.footer .swiper-slide:eq('+parentInd+') .yellow').hide();
+                    }
+                    //选中状态
+                    if(thisInd < 1 || thisInd == 1){
+                        var activeInd = thisInd + 1;
+                        $('.caseBox .listDiv:eq('+parentInd+') ._con:eq('+activeInd+')').addClass('dActive');// 上面内容选中
+                        $('.footer .swiper-slide:eq('+parentInd+') ul li:eq('+activeInd+')').addClass('lActive');//下面时间轴选中
+                        $('.footer .swiper-slide:eq('+parentInd+') .yellow').show();//黄干显示
+
+                    }else if(thisInd > 1){
+                        var nextLength = $('.caseBox .listDiv:eq('+parentInd+')').nextAll().find('.detailsDiv').length;
+                        var listDivLength = $('.caseBox .listDiv').length;
+                        if(nextLength > 0){
+                            for(var i = parentInd + 1; i < listDivLength; i ++){
+                                if($('.caseBox .listDiv:eq('+i+')').find('.detailsDiv').length > 0){
+                                    $('.caseBox .listDiv:eq('+i+') .detailsDiv:first').addClass('dActive');// 上面内容选中
+                                    $('.footer .swiper-slide:eq('+i+') .haveCon:first').addClass('lActive');//下面时间轴选中
+                                    $('.footer .swiper-slide:eq('+i+') .yellow').show();//黄干显示
+                                    //整体左移
+                                    var slide = swiper.activeIndex;
+                                    var differSlide = parseInt(i) - parseInt(slide);
+                                    var moveSlide = slide + differSlide - 3;
+                                    if(differSlide > 0 || differSlide == 0){
+                                        swiper.slideTo(moveSlide);
+                                    }
+                                    break;
+                                }
+                            }
+                        }else{
+                            var prevLength = $('.caseBox .listDiv:eq('+parentInd+')').prevAll().length;
+                            for(var i = prevLength; i > -1; i --){
+                                if($('.caseBox .listDiv:eq('+i+')').find('.detailsDiv').length > 0){
+                                     //alert(i);
+                                    $('.caseBox .listDiv:eq('+i+') .detailsDiv:last').addClass('dActive');// 上面内容选中
+                                    $('.footer .swiper-slide:eq('+i+') .haveCon:last').addClass('lActive');//下面时间轴选中
+                                    $('.footer .swiper-slide:eq('+i+') .yellow').show();//黄干显示
+                                    //整体右移
+                                    var slide = swiper.activeIndex;
+                                    var differSlide = parseInt(slide) - parseInt(i);
+                                    var moveSlide = slide - differSlide - 1;
+                                    if(differSlide > 0 || differSlide == 0){
+                                        swiper.slideTo(moveSlide);
+                                    }
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                },
+                cancelValue: '取消',
+                cancel: function() {}
+            });
+            d.showModal();
+        });
+        // 删除记录提示结束
+        //swiper引用开始
         var swiper = new Swiper('.swiper-container', {
-            //slidesPerView: 5,
+            //slidesPerView: 6,
             //spaceBetween: 30,
-            width: 345,
-            height: 215,
+            //width: 345,
+            //width: auto,
+            //height: 215,
+            slidesPerView: 'auto',
+            // freeMode: false,
+            // parallax : true,
+            //spaceBetween: 30,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -1549,67 +2157,164 @@
                 slideChangeTransitionEnd: function(){
                     //alert(this.activeIndex);//切换结束时，告诉我现在是第几个slide
                     var thisIndex = this.activeIndex;
-                    var move = -3.9 * thisIndex;
+                    var move = -3.6 * thisIndex;
                     $('.caseWrap').animate({'left':''+move+'rem'},300);
+                    $('#curve').animate({'left':''+move+'rem'},300);
+
+                    var showInd = thisIndex + 3;
+                    $('.footer .swiper-slide .gan').hide();
+                    $('.footer .swiper-slide:eq('+showInd+') .gan').show();
+
+                    //移动到最后时不给半格移动
+                    if(this.progress==1){
+                        swiper.slideTo(thisIndex);
+                    }
 
                 },
             },
+
         });
+        //swiper引用结束
     $(function(){
         // 点击按钮获取更多
-        $('.edit-more-btn').on('click','.more-btn',function(){
+        $('body').on('click', '._edit-more-btn1 .more-btn', function(event) {
             var text = $.trim($(this).text());
             if(text === '更多'){
                 $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('auto');
                 $(this).html('收起');
             }
             else{
-                $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('.35rem');
+                $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('.9rem');
+                $(this).html('更多');
+            }
+
+        });
+        $('body').on('click', '._edit-more-btn2 .more-btn', function(event) {
+            var text = $.trim($(this).text());
+            if(text === '更多'){
+                $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('auto');
+                $(this).html('收起');
+            }
+            else{
+                $(this).parents('.edit-more-btn').siblings('.list-right-btn').height('.42rem');
                 $(this).html('更多');
             }
         });
+
         // 点击关闭
-        $('.site').on('click','a span',function(){
+        $('body').on('click','.site a span',function(){
             $(this).parents('.site').remove();
         });
+
         // 报道类标签和描述类标签内容切换
-        $('.list-label').on('click','li',function(){
+         $('body').on('click','.list-label li',function(){
             $(this).parents('li').siblings('.des-con').show();
             $(this).parents('li').siblings('.report-box').hide();
         });
-        $('.list-report-label').on('click','li',function(){
+
+        $('body').on('click','.list-report-label li',function(){
             $(this).parents('li').siblings('.report-box').show();
             $(this).parents('li').siblings('.des-con').hide();
-
         });
+
         // 点击指定按钮不显示标题
-        $('#web-btn').on('click','li',function(){
+        $('body').on('click','#web-btn li',function(){
             if($(this).hasClass('close-re-title')){
                 $(this).parents('li').siblings('.report-box').find('.re-title').hide();
             }else{
                 $(this).parents('li').siblings('.report-box').find('.re-title').show();
             }
+        })
 
-        });
+        //点击编辑报道里的添加按钮显示添加框
+        $('body').on('click','.addBox .add-btn',function(){
+             $(this).siblings('.addContent').show();
+        })
+        //点击编辑里的关闭添加弹框
+        $('body').on('click','.addContent .cancel',function(){
+            $('.addContent').hide();
+        })
 
     })
     </script>
-    <!--swiper引用结束-->
-    <!--文字滚动开始-->
-    <script>
-        var speed=50
-        demo2.innerHTML=demo1.innerHTML
-        function Marquee(){
-            if(demo2.offsetTop-demo.scrollTop<=0)
-                demo.scrollTop-=demo1.offsetHeight
-            else{
-                demo.scrollTop++
-            }
-        }
-        var MyMar=setInterval(Marquee,speed)
-        demo.onmouseover=function() {clearInterval(MyMar)}
-        demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+    <!--文字向上滚动开始-->
+    <script type="text/javascript">
+        jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:1,interTime:120});
     </script>
-    <!--文字滚动结束-->
+    <!--文字向上滚动结束-->
+    <!-- 曲线echarts引用开始 -->
+    <script type="text/javascript">
+
+        $(function(){
+            var arrchart=[];
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('curve'));
+            // 指定图表的配置项和数据
+            var option = {
+                color: ['#425077'],
+                 xAxis: {
+                    show: false,
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun','1','2','3','934','9','10','11','15','16','17','18','19','20','21'],
+                    splitLine:{
+                        show:false
+                    }
+                },
+                yAxis: {
+                    show: false,
+                    type: 'value',
+                    splitLine:{
+                        show:false
+                    },
+                },
+                grid: [{
+                    top: '10%',
+                    left: 10,
+                    right: 15,
+                    bottom: '15%',
+                }],
+                series: [{
+                    data: [820, 932, 901, 934, 1290, 1330, 1320,500,600,700,900,200,700,400,1000,1200,800,918,819,920,1000],
+                    type: 'line',
+                    smooth: true,
+                    itemStyle : { normal: {label : {show: true}}},
+                    // markPoint: {
+                    //     data: [
+                    //         {type: 'max', name: '最大值'},
+                    //         {type: 'min', name: '最小值'}
+                    //     ],
+                    //     symbol: 'pin',
+                    //     symbolSize: 50,
+                    //     itemStyle: {
+                    //         normal: {
+                    //             label: {
+                    //                 show: true,
+                    //             },
+                    //             opacity: 0.4
+                    //         },
+                    //         emphasis: {
+                    //             label: {
+                    //                 show: true
+                    //             }
+                    //         },
+                    //     },
+                    // },
+
+                }]
+
+            }
+            myChart.setOption(option);
+            arrchart.push(myChart);
+            // 图表自适应
+            window.onresize = function(){
+                for(var i = 0; i < arrchart.length; i++){
+                    arrchart[i].resize();
+                }
+            };
+        })
+    </script>
+    <!-- 曲线echarts引用结束 -->
+
 </body>
 </html>

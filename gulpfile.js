@@ -182,6 +182,32 @@ gulp.task('copy', function(){
     ])
     .pipe(gulp.dest('./dist/libs/laydate'));
 
+    gulp.src([
+      './app/libs/artDialog/dist/dialog.js',
+    ])
+    .pipe(gulp.dest('./dist/libs/artDialog'));
+
+    gulp.src([
+      './app/libs/webuploader-0.1.5/css/webuploader.css',
+      './app/libs/webuploader-0.1.5/dist/webuploader.js',
+    ])
+    .pipe(gulp.dest('./dist/libs/webuploader-0.1.5'));
+
+    gulp.src([
+      './app/libs/echarts/echarts.min.js',
+    ])
+    .pipe(gulp.dest('./dist/libs/echarts'));
+
+    gulp.src([
+      './app/libs/iconfont/iconfont.css',
+    ])
+    .pipe(gulp.dest('./dist/libs/iconfont'));
+
+    gulp.src([
+      './app/libs/SuperSlide2.1-demo-00/jquery.SuperSlide.2.1.1.js',
+    ])
+    .pipe(gulp.dest('./dist/libs/SuperSlide2.1'));
+
 
 });
 // ----------------静态页面开发流程----------------end

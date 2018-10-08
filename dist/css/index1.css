@@ -87,6 +87,24 @@ a:focus {
   width: 80%;
   margin: 0 auto;
 }
+.tYellow {
+  color: #fc8c40;
+}
+.tGreenBlue {
+  color: #2e9809;
+}
+.tGreen {
+  color: #43b498;
+}
+.tLightYellow {
+  color: #95c136;
+}
+.tRed {
+  color: #e44527;
+}
+.tBlue {
+  color: #5f96b7;
+}
 /*下拉重点报道按钮开始*/
 .control {
   position: absolute;
@@ -172,6 +190,17 @@ a:focus {
   font-size: .18rem;
   color: #ffffff;
 }
+.newSubject .nLeft .labelBox .lTextarea textarea::-webkit-scrollbar {
+  width: .04rem;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  background-color: #eeeeee;
+}
+.newSubject .nLeft .labelBox .lTextarea textarea::-webkit-scrollbar-thumb {
+  width: .1rem;
+  height: .5rem;
+  background-color: #366ba8;
+}
 .newSubject .nLeft .labelBox .lEdit {
   margin-left: .2rem;
   margin-top: -0.15rem;
@@ -197,15 +226,16 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
   margin-top: .05rem;
+  font-size: .14rem;
 }
 .newSubject .nLeft .caseBox {
   position: relative;
   width: 100%;
   margin-top: .04rem;
   height: 6.6rem;
-  background: url("../images/quxian.png") left center no-repeat;
   background-size: 90% 90%;
   overflow: hidden;
+  width: 14.4rem;
 }
 .newSubject .nLeft .caseBox .caseWrap {
   width: 100%;
@@ -215,7 +245,8 @@ a:focus {
 }
 .newSubject .nLeft .caseBox .listDiv {
   float: left;
-  width: 3.9rem;
+  width: 3.6rem;
+  /* 单个div的宽度 */
   /*单个案例--标题+摘要*/
   /*单个案例--图片描述*/
   /*微博排版*/
@@ -228,6 +259,7 @@ a:focus {
 .newSubject .nLeft .caseBox .listDiv .detailsDiv {
   position: relative;
   width: 92%;
+  /* 里面小div的宽度 */
   margin-top: .12rem;
   height: 2.05rem;
   border-radius: 2px;
@@ -259,44 +291,33 @@ a:focus {
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i {
   display: inline-block;
   margin-left: .08rem;
+  font-size: .16rem;
 }
-.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.lanV {
-  width: .14rem;
-  height: .14rem;
-  background: url("../images/g_n1.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.tYellow {
+  color: #fc8c40;
 }
-.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.dangshi {
-  width: .18rem;
-  height: .14rem;
-  background: url("../images/g_n2.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.tGreenBlue {
+  color: #2e9809;
 }
-.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.shoufa {
-  width: .14rem;
-  height: .16rem;
-  background: url("../images/g_n3.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.tGreen {
+  color: #43b498;
 }
-.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.ganshi {
-  width: .16rem;
-  height: .16rem;
-  background: url("../images/g_n4.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.tLightYellow {
+  color: #95c136;
 }
-.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.baodian {
-  width: .16rem;
-  height: .16rem;
-  background: url("../images/g_n5.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeL i.tRed {
+  color: #e44527;
 }
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeR {
   width: 20%;
   float: right;
   text-align: right;
 }
-.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeR i.ie {
-  color: #63c5fd;
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeR i {
+  font-size: .16rem;
+}
+.newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .come .comeR i.tBlue {
+  color: #5f96b7;
 }
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .div1In .wenzhang {
   padding: 0 0.25rem;
@@ -331,17 +352,17 @@ a:focus {
   display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: .42rem;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: rgba(0, 0, 0, 0.5);
 }
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .hoverDiv .img {
   width: .64rem;
   height: .64rem;
   margin: 0 auto;
-  margin-top: .65rem;
-  background: url("../images/index-fangda.png") no-repeat;
+  margin-top: .45rem;
+  background: url("../images/index-fangda.png") center center no-repeat;
   background-size: 100%;
 }
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .editDiv {
@@ -355,7 +376,8 @@ a:focus {
 }
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .editDiv .aBox {
   margin-top: .6rem;
-  padding-left: .6rem;
+  /* padding-left: .6rem; */
+  padding-left: .5rem;
 }
 .newSubject .nLeft .caseBox .listDiv .detailsDiv .editDiv .aBox p {
   margin-top: .15rem;
@@ -429,7 +451,8 @@ a:focus {
   width: 100%;
 }
 .newSubject .nLeft .caseBox .listDiv .weiboDiv .wMiao .xiang {
-  width: 2.5rem;
+  /* width: 2.5rem; */
+  width: 2.3rem;
   margin-left: .15rem;
   display: inline-block;
   vertical-align: top;
@@ -512,6 +535,8 @@ a:focus {
   margin-top: .04rem;
   height: 6.7rem;
   color: #ffffff;
+  /* 图片+标题开始 */
+  /* 图片+标题结束 */
 }
 .newSubject .nLeft .bigContent ul li {
   width: 100%;
@@ -529,16 +554,28 @@ a:focus {
 .newSubject .nLeft .bigContent .lCon {
   padding: 0 5%;
   margin-top: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .newSubject .nLeft .bigContent .lCon .cLeft {
   width: 58%;
-  float: left;
+  /*width: 68%;*/
+  /*float: left;*/
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .newSubject .nLeft .bigContent .lCon .cLeft .lWen {
   margin-top: .9rem;
   padding: 0 .4rem 0 .1rem;
   font-size: .24rem;
   text-indent: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 .newSubject .nLeft .bigContent .lCon .cLeft .lA a {
   float: right;
@@ -548,16 +585,30 @@ a:focus {
 }
 .newSubject .nLeft .bigContent .lCon .cRight {
   width: 42%;
-  float: right;
+  /*width: 32%;*/
+  /*float: right;*/
 }
 .newSubject .nLeft .bigContent .lCon .cRight .imgWrap {
   width: 5.8rem;
   height: 4.9rem;
   padding: .2rem;
   background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
 }
 .newSubject .nLeft .bigContent .lCon .cRight .imgWrap img {
-  width: 5.38rem;
+  /* width: 5.38rem; */
+  width: 100%;
+}
+.newSubject .nLeft .bigContent .imgTit .cRight {
+  margin: 0 auto;
+  position: relative;
+}
+.newSubject .nLeft .bigContent .imgTit .cRight .lA a {
+  position: absolute;
+  right: -1.5rem;
+  bottom: .1rem;
+  color: #efe300;
+  font-size: .18rem;
 }
 .newSubject .nLeft .bigContent .moveLeft {
   position: absolute;
@@ -659,41 +710,25 @@ a:focus {
 .newSubject .nRight .keyNote .descriptBox .bLabel .tubiao i {
   display: inline-block;
   margin-right: .1rem;
+  cursor: pointer;
 }
-.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .lanV {
-  display: inline-block;
-  width: .14rem;
-  height: .14rem;
-  background: url("../images/g_n1.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .tYellow {
+  color: #fc8c40;
 }
-.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .dangshi {
-  display: inline-block;
-  width: .18rem;
-  height: .14rem;
-  background: url("../images/g_n2.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .tGreenBlue {
+  color: #2e9809;
 }
-.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .shoufa {
-  display: inline-block;
-  width: .14rem;
-  height: .16rem;
-  background: url("../images/g_n3.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .tGreen {
+  color: #43b498;
 }
-.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .ganshi {
-  display: inline-block;
-  width: .16rem;
-  height: .16rem;
-  background: url("../images/g_n4.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .tLightYellow {
+  color: #95c136;
 }
-.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .baodian {
-  display: inline-block;
-  width: .16rem;
-  height: .16rem;
-  background: url("../images/g_n5.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .tRed {
+  color: #e44527;
+}
+.newSubject .nRight .keyNote .descriptBox .bLabel .tubiao .tBlue {
+  color: #5f96b7;
 }
 .newSubject .nRight .keyNote .descriptBox .bCont {
   font-size: .16rem;
@@ -701,10 +736,13 @@ a:focus {
 }
 .newSubject .nRight .keyNote .descriptBox .bCont .bImg {
   margin-top: .22rem;
+  /*width: 3.9rem;*/
   width: 100%;
 }
 .newSubject .nRight .keyNote .descriptBox .bCont .bImg img {
   width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .newSubject .nRight .keyNote .descriptBox .bCont p {
   margin-top: .22rem;
@@ -755,41 +793,22 @@ a:focus {
 .newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao i {
   display: inline-block;
   margin-left: .1rem;
+  font-size: .16rem;
 }
-.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .lanV {
-  display: inline-block;
-  width: .14rem;
-  height: .14rem;
-  background: url("../images/g_n1.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .tYellow {
+  color: #fc8c40;
 }
-.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .dangshi {
-  display: inline-block;
-  width: .18rem;
-  height: .14rem;
-  background: url("../images/g_n2.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .tGreenBlue {
+  color: #2e9809;
 }
-.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .shoufa {
-  display: inline-block;
-  width: .14rem;
-  height: .16rem;
-  background: url("../images/g_n3.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .tGreen {
+  color: #43b498;
 }
-.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .ganshi {
-  display: inline-block;
-  width: .16rem;
-  height: .16rem;
-  background: url("../images/g_n4.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .tLightYellow {
+  color: #95c136;
 }
-.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .baodian {
-  display: inline-block;
-  width: .16rem;
-  height: .16rem;
-  background: url("../images/g_n5.png") no-repeat;
-  background-size: 100% 100%;
+.newSubject .nRight .keyNote .blogWrap .bHead .hDes .tTubiao .tRed {
+  color: #e44527;
 }
 .newSubject .nRight .keyNote .blogWrap .bHead .hDes .dMiao {
   margin-top: .08rem;
@@ -929,5 +948,20 @@ a:focus {
   background-size: 100% 100%;
   margin-right: .02rem;
 }
+/* 曲线开始 */
+.curveWrap {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 2.3rem;
+  z-index: -2;
+}
+#curve {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 500px;
+}
+/* 曲线结束 */
 
 /*# sourceMappingURL=index1.css.map */

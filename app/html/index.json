@@ -2,12 +2,16 @@
   "title": "首页",
 
   "styles": [
-    "../css/index1.css"
+    "../css/index1.css",
+    "../libs/webuploader-0.1.5/webuploader.css",
+    "../libs/iconfont/iconfont.css"
   ],
   "scripts":[
-
-    "../libs/swiper/swiper.min.js"
-
-
+    "../libs/swiper/swiper.min.js",
+    "../libs/artDialog/dialog.js",
+    "../libs/webuploader-0.1.5/webuploader.js",
+    "../libs/webuploader-0.1.5/upload.js",
+    "../libs/echarts/echarts.min.js",
+    "../libs/SuperSlide2.1/jquery.SuperSlide.2.1.1.js"
   ]
 }

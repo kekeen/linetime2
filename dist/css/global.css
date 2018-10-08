@@ -97,6 +97,24 @@ a:focus {
 .yellow {
   color: #e7c900;
 }
+.tYellow {
+  color: #fc8c40;
+}
+.tGreenBlue {
+  color: #2e9809;
+}
+.tGreen {
+  color: #43b498;
+}
+.tLightYellow {
+  color: #95c136;
+}
+.tRed {
+  color: #e44527;
+}
+.tBlue {
+  color: #5f96b7;
+}
 /* 头部 start */
 .header {
   position: fixed;
@@ -121,11 +139,20 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
   width: 4.9rem;
+  height: .7rem;
   font-size: 0.36rem;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+}
+.header .select #scroll_begin {
+  display: inline;
+}
+.header .select #scroll_begin .spanMargin {
+  margin-right: .2rem;
+}
+.header .select #scroll_end {
+  display: inline;
 }
 .header .select .san {
   display: inline-block;
@@ -195,6 +222,9 @@ a:focus {
   height: .6rem;
   overflow: hidden;
 }
+.header .describe .dP li {
+  min-height: .6rem;
+}
 .header .caseConfig {
   float: right;
   margin-top: .22rem;
@@ -227,26 +257,20 @@ a:focus {
   padding-left: 0.5%;
   background: url("../images/footer-bg.png") top center no-repeat;
   background-size: 100% 100%;
-  /*标杆*/
-}
-.footer .gan {
-  position: absolute;
-  left: 693px;
-  top: .28rem;
-  width: .15rem;
-  height: 1.54rem;
-  background: url("../images/gan.png") no-repeat;
-  background-size: 100% 100%;
 }
 .footer .swiper-container {
   width: 100%;
+  height: 100%;
 }
 .footer .swiper-wrapper {
   width: 100%;
-  background: url("../images/index-time.png") left 150px repeat-x;
+  /* background: url("../images/index-time.png") left 150px repeat-x; */
+  background: url("../images/index-time.png") left 1.68rem repeat-x;
 }
 .footer .swiper-slide {
   height: 2.15rem;
+  /*  width: 3.9rem; */
+  width: 3.6rem;
   padding-top: .36rem;
   cursor: pointer;
 }
@@ -254,6 +278,19 @@ a:focus {
   position: relative;
   height: 100%;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer .swiper-slide .swiperIn .gan {
+  position: absolute;
+  left: -0.08rem;
+  top: -0.09rem;
+  width: .15rem;
+  height: 1.54rem;
+  background: url("../images/gan.png") no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+.footer .swiper-slide .swiperIn .gan.gShow {
+  display: block;
 }
 .footer .swiper-slide .swiperIn .setTime {
   position: absolute;
@@ -265,7 +302,8 @@ a:focus {
 .footer .swiper-slide .swiperIn .setTime .time1 {
   display: inline-block;
   margin-right: .2rem;
-  width: .58rem;
+  /* width: .58rem; */
+  width: .85rem;
   height: .25rem;
   line-height: .25rem;
   text-align: center;
@@ -273,11 +311,19 @@ a:focus {
   background: url("../images/index-times.png") no-repeat;
   background-size: 100% 100%;
 }
+.footer .swiper-slide .swiperIn .yellow {
+  display: none;
+  /* width: 3.64rem; */
+  width: 3.5rem;
+  height: .08rem;
+  margin-top: .07rem;
+  background: url("../images/yellow.png") no-repeat;
+}
 .footer .swiper-slide .swiperIn ul {
-  padding-top: .05rem;
+  padding-top: .03rem;
 }
 .footer .swiper-slide .swiperIn li {
-  margin-top: .1rem;
+  margin-top: .08rem;
   height: .34rem;
   width: 3rem;
   box-sizing: border-box;
@@ -293,7 +339,7 @@ a:focus {
   color: #fff200;
 }
 .footer .swiper-slide .swiperIn .haveCon {
-  margin-top: .1rem;
+  margin-top: .08rem;
   min-height: .34rem;
   line-height: .34rem;
   padding-left: .1rem;
@@ -313,7 +359,7 @@ a:focus {
   background: none;
 }
 .footer .swiper-slide .swiperIn .addNew {
-  margin-top: .1rem;
+  margin-top: .08rem;
   min-height: .34rem;
   line-height: .34rem;
   padding-left: .1rem;
@@ -426,9 +472,7 @@ a:focus {
   display: block;
   max-width: 100%;
   color: #00e4ff;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  /*  .txt(); */
 }
 /* table end */
 /* bootstrap初始化 start */
@@ -492,7 +536,7 @@ a:focus {
   margin-top: -4px;
 }
 .modal-dialog {
-  width: 10rem;
+  width: 13rem;
 }
 .modal-content {
   background: #013879;

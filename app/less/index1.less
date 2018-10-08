@@ -1,6 +1,25 @@
 @charset "utf-8";
 @import "./base/base.less";
 @import "./base/conn.less";
+
+.tYellow{
+  color: #fc8c40;
+}
+.tGreenBlue{
+  color: #2e9809;
+}
+.tGreen{
+  color: #43b498;
+}
+.tLightYellow{
+  color: #95c136;
+}
+.tRed{
+  color: #e44527;
+}
+.tBlue{
+  color: #5f96b7;
+}
 /*下拉重点报道按钮开始*/
 .control{
   position: absolute;
@@ -76,6 +95,17 @@
           font-size: .18rem;
           color: #ffffff;
         }
+        textarea::-webkit-scrollbar {
+          width: .04rem;
+          border-left: 2px solid #ffffff;
+          border-right: 2px solid #ffffff;
+          background-color: #eeeeee;
+        }
+        textarea::-webkit-scrollbar-thumb {
+          width: .1rem;
+          height: .5rem;
+          background-color: #366ba8;
+        }
       }
       .lEdit{
         margin-left: .2rem;
@@ -100,6 +130,7 @@
             display: inline-block;
             vertical-align: middle;
             margin-top: .05rem;
+            font-size: .14rem;
           }
         }
       }
@@ -110,9 +141,9 @@
       width: 100%;
       margin-top: .04rem;
       height: 6.6rem;
-      background: url("../images/quxian.png") left center no-repeat;
       background-size: 90% 90%;
       overflow: hidden;
+      width: 14.4rem;
       .caseWrap{
         width: 100%;
         position: absolute;
@@ -121,7 +152,7 @@
       }
       .listDiv{
         float: left;
-        width: 3.9rem;//单个div的宽度
+        width: 3.6rem;/* 单个div的宽度 */
         .place{
           width: 100%;
           height: 2.05rem;
@@ -130,7 +161,7 @@
         /*单个案例--标题+摘要*/
         .detailsDiv{
           position: relative;
-          width: 92%;//里面小div的宽度
+          width: 92%;/* 里面小div的宽度 */
           margin-top: .12rem;
           height: 2.05rem;
           border-radius: 2px;
@@ -156,35 +187,21 @@
                 i{
                   display: inline-block;
                   margin-left: .08rem;
-                  &.lanV{
-                    width: .14rem;
-                    height: .14rem;
-                    background: url("../images/g_n1.png") no-repeat;
-                    background-size: 100% 100%;
+                  font-size: .16rem;
+                  &.tYellow{
+                    color: #fc8c40;
                   }
-                  &.dangshi{
-                    width: .18rem;
-                    height: .14rem;
-                    background: url("../images/g_n2.png") no-repeat;
-                    background-size: 100% 100%;
+                  &.tGreenBlue{
+                    color: #2e9809;
                   }
-                  &.shoufa{
-                    width: .14rem;
-                    height: .16rem;
-                    background: url("../images/g_n3.png") no-repeat;
-                    background-size: 100% 100%;
+                  &.tGreen{
+                    color: #43b498;
                   }
-                  &.ganshi{
-                    width: .16rem;
-                    height: .16rem;
-                    background: url("../images/g_n4.png") no-repeat;
-                    background-size: 100% 100%;
+                  &.tLightYellow{
+                    color: #95c136;
                   }
-                  &.baodian{
-                    width: .16rem;
-                    height: .16rem;
-                    background: url("../images/g_n5.png") no-repeat;
-                    background-size: 100% 100%;
+                  &.tRed{
+                    color: #e44527;
                   }
                 }
               }
@@ -192,8 +209,11 @@
                 width: 20%;
                 float: right;
                 text-align: right;
-                i.ie{
-                  color: #63c5fd;
+                i{
+                  font-size: .16rem;
+                  &.tBlue{
+                    color: #5f96b7;
+                  }
                 }
               }
             }
@@ -225,16 +245,16 @@
             display: none;
             position: absolute;
             left: 0;
-            top: 0;
+            top: .42rem;
             width: 100%;
-            height: 100%;
+            height: 80%;
             background: rgba(0,0,0,0.5);
             .img{
               width: .64rem;
               height: .64rem;
               margin: 0 auto;
-              margin-top: .65rem;
-              background: url("../images/index-fangda.png") no-repeat;
+              margin-top: .45rem;
+              background: url("../images/index-fangda.png") center center no-repeat;
               background-size: 100%;
             }
           }
@@ -248,7 +268,8 @@
             background: rgba(3,23,74,0.8);
             .aBox{
               margin-top: .6rem;
-              padding-left: .6rem;
+              /* padding-left: .6rem; */
+              padding-left: .5rem;
               p{
                 margin-top: .15rem;
                 font-size: .14rem;
@@ -327,7 +348,8 @@
               }
             }
             .xiang{
-              width: 2.5rem;
+              /* width: 2.5rem; */
+              width: 2.3rem;
               margin-left: .15rem;
               display: inline-block;
               vertical-align: top;
@@ -437,16 +459,18 @@
       .lCon{
         padding: 0 5%;
         margin-top: .2rem;
+        display: flex;
         .cLeft{
           width: 58%;
-          //width: 68%;
-          float: left;
-          //background: red;
+          /*width: 68%;*/
+          /*float: left;*/
+          flex: 1;
           .lWen{
             margin-top: .9rem;
             padding: 0 .4rem 0 .1rem;
             font-size: .24rem;
             text-indent: 30px;
+            .txtmore(10);
           }
           .lA a{
             float: right;
@@ -457,20 +481,34 @@
         }
         .cRight{
           width: 42%;
-          //width: 32%;
-          float: right;
-          //background: purple;
+          /*width: 32%;*/
+          /*float: right;*/
           .imgWrap{
             width: 5.8rem;
             height: 4.9rem;
             padding: .2rem;
             background: rgba(255,255,255,0.2);
+            overflow: hidden;
             img{
-              width: 5.38rem;
+              /* width: 5.38rem; */
+              width: 100%;
             }
           }
         }
       }
+      /* 图片+标题开始 */
+      .imgTit .cRight{
+        margin: 0 auto;
+        position: relative;
+        .lA a{
+          position: absolute;
+          right: -1.5rem;
+          bottom: .1rem;
+          color: #efe300;
+          font-size: .18rem;
+        }
+      }
+      /* 图片+标题结束 */
       .moveLeft{
         position: absolute;
         left: .2rem;
@@ -526,27 +564,6 @@
         font-size: .14rem;
         color: #010101;
       }
-      //.control{
-      //  float: right;
-      //  a{
-      //    display: block;
-      //    width: .21rem;
-      //    height: .21rem;
-      //    background: url("../images
-      //
-      //
-      //
-      // /index-down.png") no-repeat;
-      //    background-size: 100% 100%;
-      //    &.up{/*向上拉*/
-      //      display: block;
-      //      width: .21rem;
-      //      height: .21rem;
-      //      background: url("../images/index-up.png") no-repeat;
-      //      background-size: 100% 100%;
-      //    }
-      //  }
-      //}
     }
     .keyNote{
       width: 100%;
@@ -588,41 +605,25 @@
             i{
               display: inline-block;
               margin-right: .1rem;
+              cursor: pointer;
             }
-            .lanV{
-              display: inline-block;
-              width: .14rem;
-              height: .14rem;
-              background: url("../images/g_n1.png") no-repeat;
-              background-size: 100% 100%;
+            .tYellow{
+              color: #fc8c40;
             }
-            .dangshi{
-              display: inline-block;
-              width: .18rem;
-              height: .14rem;
-              background: url("../images/g_n2.png") no-repeat;
-              background-size: 100% 100%;
+            .tGreenBlue{
+              color: #2e9809;
             }
-            .shoufa{
-              display: inline-block;
-              width: .14rem;
-              height: .16rem;
-              background: url("../images/g_n3.png") no-repeat;
-              background-size: 100% 100%;
+            .tGreen{
+              color: #43b498;
             }
-            .ganshi{
-              display: inline-block;
-              width: .16rem;
-              height: .16rem;
-              background: url("../images/g_n4.png") no-repeat;
-              background-size: 100% 100%;
+            .tLightYellow{
+              color: #95c136;
             }
-            .baodian{
-              display: inline-block;
-              width: .16rem;
-              height: .16rem;
-              background: url("../images/g_n5.png") no-repeat;
-              background-size: 100% 100%;
+            .tRed{
+              color: #e44527;
+            }
+            .tBlue{
+              color: #5f96b7;
             }
           }
         }
@@ -631,10 +632,12 @@
           color: #ffffff;
           .bImg{
             margin-top: .22rem;
-            //width: 3.9rem;
+            /*width: 3.9rem;*/
             width: 100%;
             img{
               width: 100%;
+              display: block;
+              margin:0 auto;
             }
           }
           p{
@@ -681,42 +684,24 @@
               i{
                 display: inline-block;
                 margin-left: .1rem;
+                font-size: .16rem;
               }
-              .lanV{
-                display: inline-block;
-                width: .14rem;
-                height: .14rem;
-                background: url("../images/g_n1.png") no-repeat;
-                background-size: 100% 100%;
+              .tYellow{
+                color: #fc8c40;
               }
-              .dangshi{
-                display: inline-block;
-                width: .18rem;
-                height: .14rem;
-                background: url("../images/g_n2.png") no-repeat;
-                background-size: 100% 100%;
+              .tGreenBlue{
+                color: #2e9809;
               }
-              .shoufa{
-                display: inline-block;
-                width: .14rem;
-                height: .16rem;
-                background: url("../images/g_n3.png") no-repeat;
-                background-size: 100% 100%;
+              .tGreen{
+                color: #43b498;
               }
-              .ganshi{
-                display: inline-block;
-                width: .16rem;
-                height: .16rem;
-                background: url("../images/g_n4.png") no-repeat;
-                background-size: 100% 100%;
+              .tLightYellow{
+                color: #95c136;
               }
-              .baodian{
-                display: inline-block;
-                width: .16rem;
-                height: .16rem;
-                background: url("../images/g_n5.png") no-repeat;
-                background-size: 100% 100%;
+              .tRed{
+                color: #e44527;
               }
+
             }
             .dMiao{
               margin-top: .08rem;
@@ -866,4 +851,19 @@
     }
   }
 }
+/* 曲线开始 */
+.curveWrap{
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 2.3rem;
+  z-index: -2;
+}
+#curve{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 500px;
+}
+/* 曲线结束 */
 

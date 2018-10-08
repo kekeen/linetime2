@@ -26,15 +26,22 @@
     <div class="header">
     <div class="select">
         <div class="sShow">
-            <span class="tit">新闻线：叙利亚动乱全纪录</span>
+            <div class="tit" id="scroll_div">
+                <p  id="scroll_begin">
+                    <span class="spanMargin">新闻线：叙利亚动乱全纪录新闻线</span>
+                    <span class="spanMargin">新闻线：叙利亚动乱全纪录新闻线</span>
+                    <span class="spanMargin">新闻线：叙利亚动乱全纪录新闻线</span>
+                </p>
+                <p id="scroll_end"></p>
+            </div>
             <span class="fa fa-caret-down san"></span>
         </div>
         <div class="sHide">
             <ul class="sUl">
-                <li>新闻线：叙利亚动乱全记录</li>
-                <li>向交警推销化妆品</li>
-                <li>唐山发生酒驾事故</li>
-                <li>偶遇太阳闵孝琳</li>
+                <li>新闻线：叙利亚动乱全记录新闻线</li>
+                <li>向交警推销化妆品新闻线</li>
+                <li>唐山发生酒驾事故新闻线：叙利亚动乱全记录新闻线：叙利亚动乱全记录新闻线：叙利亚动乱全记录</li>
+                <li>偶遇太阳闵孝琳新闻线：叙利亚动乱全记录新闻线：叙利亚动乱全记录新闻线：叙利亚动乱全记录</li>
                 <li>偶遇太阳闵孝琳</li>
                 <li>偶遇太阳闵孝琳</li>
                 <li>偶遇太阳闵孝琳</li>
@@ -43,9 +50,12 @@
     </div>
     <div class="describe">
         <span class="leftImg"></span>
-        <div class="dP" id="demo">
-            <p id="demo1">011－2012年叙利亚动乱，是从2011年1月26日初步开始、后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗，为阿拉伯之春的一部分。宪法权利的缺失最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗，为阿拉伯之春的一部分。宪法权利的缺失宪法权利的缺失宪法权利的缺失</p>
-            <p id="demo2"></p>
+        <div class="dP txtMarquee-top">
+            <div class="bd">
+                <ul class="infoList">
+                    <li>011－2012年叙利亚动乱，是从2011年1月26日初步开始、后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗,后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗,后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗,后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议，最后演变成旨在推翻巴沙尔·阿萨德政府的武力抗争战斗,后于3月15日全面爆发并持续至今的发生在叙利亚的示威抗议</li>
+                </ul>
+            </div>
         </div>
         <span class="rightImg"></span>
     </div>
@@ -58,100 +68,199 @@
         <div class="project-con">
             <div class="project-event clearfix">
                 <div class="pull-left">
-                    <span>事件回播分析</span>
-                    <input type="" class="form-control" placeholder="事件名模糊查询">
+                    <span>搜索案例</span>
+                    <input type="" class="form-control" placeholder="请输入案例名称">
                     <a href="#" class="ser-btn">查询</a>
-                    <a href="#" class="a-btn" data-toggle="modal" data-target="#edit-member">添加事件</a>
+                    <a href="#" class="a-btn" id="addSubject">添加案例</a>
                 </div>
                 <div class="pull-right">
                     <a href="#" class="a-btn mr5">获取发布量导入模板</a>
                     <a href="#" class="a-btn">获取时间轴区段模板</a>
                 </div>
             </div>
-            <table class="tables pro-table">
-                <thead>
-                    <tr>
-                        <th>事件名</th>
-                        <th>事件全称</th>
-                        <th>时间范围</th>
-                        <th>操作</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="txt">
-                            <a href="javascript:;" class="tables-bt">陈意涵家境遭曝光</a>
-                        </td>
-                        <td>新闻线：叙利亚动乱记录</td>
-                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
-                        <td>
-                            <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
-                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+            <div class='tableWrap sUl'>
+                <table class="tables pro-table">
+                    <thead>
+                        <tr>
+                            <th>案例名</th>
+                            <th>案例全称</th>
+                            <th>时间范围</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="txt" style="width:20%">
+                                <a href="javascript:;" class="tables-bt">陈意涵家境遭曝光陈意涵家境遭曝光陈意涵家境遭曝光陈意涵家境遭曝光陈意涵家境遭曝光陈意涵家境遭曝光光陈意涵家境遭曝光陈意涵家境遭曝光光陈意涵家境遭曝光陈意涵家境遭曝光</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录新闻线：叙利亚动乱记录新闻线：叙利亚动乱记录新闻线：叙利亚动乱记录新闻线：叙利亚动乱记录新闻线：叙利亚动乱记录新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="txt">
-                            <a href="javascript:;" class="tables-bt">上市公司2000强</a>
-                        </td>
-                        <td>新闻线：叙利亚动乱记录</td>
-                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
-                        <td>
-                            <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
-                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">上市公司2000强</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="txt">
-                            <a href="javascript:;" class="tables-bt">膜拜员工坠楼</a>
-                        </td>
-                        <td>新闻线：叙利亚动乱记录</td>
-                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
-                        <td>
-                           <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
-                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">膜拜员工坠楼</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                               <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="txt">
-                            <a href="javascript:;" class="tables-bt">应聘模特被骗整形</a>
-                        </td>
-                        <td>新闻线：叙利亚动乱记录</td>
-                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
-                        <td>
-                            <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
-                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">应聘模特被骗整形</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="txt">
-                            <a href="javascript:;" class="tables-bt">鸿毛药酒再声明</a>
-                        </td>
-                        <td>新闻线：叙利亚动乱记录</td>
-                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
-                        <td>
-                            <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
-                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">鸿毛药酒再声明</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="txt">
-                            <a href="javascript:;" class="tables-bt">拉共享单车回老家</a>
-                        </td>
-                        <td>新闻线：叙利亚动乱记录</td>
-                        <td>2018/02/03 07:02-2018/03/09 17:02</td>
-                        <td>
-                            <a href="#" class="yellow mr25" data-toggle="modal" data-target="#edit-member">编辑</a>
-                            <a href="#" class="yellow" data-toggle="modal" data-target="#del">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">拉共享单车回老家</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">应聘模特被骗整形</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">鸿毛药酒再声明</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">拉共享单车回老家</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">应聘模特被骗整形</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">鸿毛药酒再声明</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">拉共享单车回老家</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">鸿毛药酒再声明</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt">
+                                <a href="javascript:;" class="tables-bt">拉共享单车回老家</a>
+                            </td>
+                            <td>新闻线：叙利亚动乱记录</td>
+                            <td>2018/02/03 07:02-2018/03/09 17:02</td>
+                            <td>
+                                <a href="#" class="yellow mr25" data-event="editSubject">编辑</a>
+                                <a href="#" class="yellow" data-event="delSubject">删除</a>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
             <div class="page-box">
                 <div class="page pull-right">
                     <span>共800条,第1/80</span>
@@ -187,90 +296,59 @@
     </section>
 
     <!-- 模态框 -->
-    <!-- 编辑信息 -->
-    <div class="modal fade" id="edit-member">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">新增事件</h4>
+    <!-- 编辑信息弹框开始-->
+    <div class="modal-body" id="edit-member">
+        <ul class="modal-list">
+            <li>
+                <label>事件名：</label>
+                <div class="list-right">
+                    <input type="text" class="form-control" placeholder="10个字">
                 </div>
-                <div class="modal-body">
-                    <ul class="modal-list">
-                        <li>
-                            <label>事件名：</label>
-                            <div class="list-right">
-                                <input type="text" class="form-control" placeholder="10个字">
-                            </div>
-                        </li>
-                        <li>
-                            <label>事件全称：</label>
-                            <div class="list-right">
-                                <input type="text" class="form-control" placeholder="30个字">
-                            </div>
-                        </li>
-                        <li>
-                            <label>时间范围：</label>
-                            <div class="list-right layut-times">
-                                <input type="text" class="form-control time-range" placeholder="2018-06-07 12:14">
-                                <span>至</span>
-                                <input type="" class="form-control time-range" placeholder="2018-06-07 12:14">
-                            </div>
-                        </li>
-                        <li>
-                            <label>事件概述：</label>
-                            <div class="list-right">
-                                <textarea rows="5" class="form-control" placeholder="限200个字"></textarea>
-                            </div>
-                        </li>
-                        <li>
-                            <label>导入发布量数据：</label>
-                            <div class="list-right layut-file">
-                                <a href="javascript:;" class="ser-btn">
-                                    浏览
-                                </a>
-                                <span>未选择文件</span>
-                                <input type="file">
-                            </div>
-                        </li>
-                        <li>
-                            <label>导入时间轴数据：</label>
-                            <div class="list-right layut-file">
-                                <a href="javascript:;" class="ser-btn">
-                                    浏览
-                                </a>
-                                <span>未选择文件</span>
-                                <input type="file" name="">
-                            </div>
-                        </li>
+            </li>
+            <li>
+                <label>事件全称：</label>
+                <div class="list-right">
+                    <input type="text" class="form-control" placeholder="30个字">
+                </div>
+            </li>
+            <li>
+                <label>时间范围：</label>
+                <div class="list-right layut-times">
+                    <input type="text" class="form-control time-range" placeholder="2018-06-07 12:14">
+                    <span>至</span>
+                    <input type="" class="form-control time-range" placeholder="2018-06-07 12:14">
+                </div>
+            </li>
+            <li>
+                <label>事件概述：</label>
+                <div class="list-right">
+                    <textarea rows="5" class="form-control" placeholder="限200个字"></textarea>
+                </div>
+            </li>
+            <li class="clearfix">
+                <label>导入发布量数据：</label>
+                <div class="list-right layut-file">
+                    <a href="javascript:;" class="ser-btn">
+                        浏览
+                    </a>
+                    <span>未选择文件</span>
+                    <input type="file">
+                </div>
+            </li>
+            <li class="clearfix">
+                <label>导入时间轴数据：</label>
+                <div class="list-right layut-file">
+                    <a href="javascript:;" class="ser-btn">
+                        浏览
+                    </a>
+                    <span>未选择文件</span>
+                    <input type="file" name="">
+                </div>
+            </li>
 
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
-                    <button id="btn" type="button" class="btn yes">保存</button>
-                </div>
-            </div>
-        </div>
+        </ul>
     </div>
-    <!-- 删除 -->
-    <div class="modal fade" id="del">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">删除</h4>
-                </div>
-                <div class="modal-body">
-                    <p class="body-txt">确认删除当前案例？</p>
-                </div>
-                <div class="modal-footer">
-                    <button id="btn" type="button" class="btn yes">确定</button>
-                    <button id="btn" type="button" class="btn" data-dismiss="modal" aria-label="Close">取消</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- 编辑信息弹框结束-->
 
      <!-- 添加按钮 -->
     <!-- <div class="modal fade" id="add-btn">
@@ -320,15 +398,128 @@
 <script src="../js/resize.js"></script>
 <script src="../js/index1.js"></script>
 
+<script src="../libs/artDialog/dialog.js"></script>
+
 
 
 <script type="text/javascript">
+    // 编辑案例artDialog引用开始
+    $('a[data-event=editSubject]').on('click', function() {
+        var d = dialog({
+            title: '编辑案例',
+            content: $('#edit-member').html(),
+            width:"12rem",
+            okValue: '确 定',
+            ok: function() {
+                dialog()
+                    .title('提示2')
+                    .content('hello world')
+                    .button([{
+                        value: '打开',
+                        autofocus: true,
+                        callback: function() {
+                            dialog()
+                                .title('提示')
+                                .showModal();
+                        }
+                    }])
+                    .show();
+                return false;
+            },
+            cancelValue: '取消',
+            cancel: function() {},
+            onshow: function () {
+                // 时间控件
+                lay('.time-range').each(function(){
+                    laydate.render({
+                        elem: this,
+                        type: 'datetime'
+                    });
+                });
+            }
+        });
 
+        d.showModal();
 
+    });
+    // 编辑案例artDialog引用结束
+    // 新增案例artDialog引用开始
+    $('#addSubject').on('click', function() {
+        var d = dialog({
+            title: '新增案例',
+            content: $('#edit-member').html(),
+            width:"12rem",
+            okValue: '确 定',
+            ok: function() {
+                dialog()
+                    .title('提示2')
+                    .content('hello world')
+                    .button([{
+                        value: '打开',
+                        autofocus: true,
+                        callback: function() {
+                            dialog()
+                                .title('提示')
+                                .showModal();
+                        }
+                    }])
+                    .show();
+                return false;
+            },
+            cancelValue: '取消',
+            cancel: function() {},
+            onshow: function () {
+                // 时间控件
+                lay('.time-range').each(function(){
+                    laydate.render({
+                        elem: this,
+                        type: 'datetime'
+                    });
+                });
+            }
+        });
 
+        d.showModal();
 
+    });
+    // 新增案例artDialog引用结束
+    // 删除记录提示开始
+    $('a[data-event=delSubject]').on('click', function() {
+        var d = dialog({
+            title: '删除记录',
+            content: '确定要删除此案例吗',
+            width:"4rem",
+            okValue: '确 定',
+            ok: function() {
+                dialog()
+                    .title('提示2')
+                    .content('hello world')
+                    .button([{
+                        value: '打开',
+                        autofocus: true,
+                        callback: function() {
+                            dialog()
+                                .title('提示')
+                                .showModal();
+                        }
+                    }])
+                    .show();
+                return false;
+            },
+            cancelValue: '取消',
+            cancel: function() {}
+        });
+
+        d.showModal();
+
+    });
+    // 删除记录提示结束
 </script>
-
+<!--文字向上滚动开始-->
+    <script type="text/javascript">
+        jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:1,interTime:120});
+    </script>
+<!--文字向上滚动结束-->
 
 </body>
 </html>
