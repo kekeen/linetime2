@@ -1,0 +1,9 @@
+{
+  "title": "常用模块",
+
+  "styles": [
+    "../css/module.css"
+  ],
+  "scripts":[
+  ]
+}

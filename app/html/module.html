@@ -1,0 +1,50 @@
+<%- include('../templates/head') %>
+<body>
+    <!-- 按钮 -->
+    <div class="btnBox">
+        <a class="btn" href="javascript:;">编辑专题</a>
+        <a class="btn blue" href="javascript:;">编辑专题</a>
+        <a class="border-btn" href="javascript:;">编辑专题</a>
+        <a class="border-btn active" href="javascript:;">编辑专题</a>
+        <a class="lightGreen-btn" href="javascript:;">编辑专题</a>
+    </div>
+    <!-- 分页 -->
+    <div class="page">
+        <span>共800条,第1/80</span>
+        <a class="next-page btn1" href="javascript:;"><i class="fa fa-angle-left"></i></a>
+        <ul class="page-list clearfix">
+            <li><a class="btn1 active" href="javascript:;">1</a></li>
+            <li><a class="btn1" href="javascript:;">2</a></li>
+            <li><a class="btn1" href="javascript:;">3</a></li>
+            <li><a class="btn1" href="javascript:;">4</a></li>
+            <li><a class="btn1" href="javascript:;">5</a></li>
+            <li><a class="btn1" href="javascript:;">6</a></li>
+            <li><a class="btn1" href="javascript:;">7</a></li>
+            <li><a class="btn1" href="javascript:;">8</a></li>
+            <li><a class="btn1" href="javascript:;">9</a></li>
+            <li><a class="btn1" href="javascript:;">10</a></li>
+        </ul>
+        <a class="next-page btn1" href="javascript:;"><i class="fa fa-angle-right"></i></a>
+        <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                10条/页
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="#">10条/页</a></li>
+                <li><a href="#">20条/页</a></li>
+                <li><a href="#">30条/页</a></li>
+            </ul>
+        </div>
+        <span>跳转到<input type="text" class="form-control" value="1">页</span>
+    </div>
+
+</body>
+</html>
+<%- include('../templates/foot') %>
+<script>
+    $('.dropdown,.dropup').on('click','.dropdown-menu li a', function(event) {
+        var txt = $(this).text();
+        $(this).parents('.dropdown-menu').siblings('.dropdown-toggle')[0].childNodes[0].nodeValue = txt + ' ';
+    });
+</script>
